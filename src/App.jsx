@@ -75,7 +75,8 @@ import AvatarPage from './pages/component/AvatarPage';
 import TooltipPage from './pages/component/TooltipPage';
 import AccordionPage from './pages/component/AccordionPage';
 import IconsPage from './pages/component/IconsPage';
-import Projects from './pages/Projects';
+import Projects from './pages/projects/Projects';
+
 
 function App() {
 
