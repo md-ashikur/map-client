@@ -231,7 +231,7 @@ function Sidebar({ sidebarOpen, setSidebarOpen }) {
                   <div className="flex items-center">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
-                      class="icon w-6 h-6 icon-tabler icon-tabler-map-2"
+                      class="icon shrink-0 w-6 h-6 icon-tabler icon-tabler-map-2"
                       width="32"
                       height="32"
                       viewBox="0 0 24 24"
@@ -282,7 +282,7 @@ function Sidebar({ sidebarOpen, setSidebarOpen }) {
                   <div className="flex items-center">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
-                      class="icon w-6 h-6 icon-tabler icon-tabler-map-2"
+                      class="icon shrink-0 w-6 h-6 icon-tabler icon-tabler-map-2"
                       width="32"
                       height="32"
                       viewBox="0 0 24 24"
@@ -331,7 +331,7 @@ function Sidebar({ sidebarOpen, setSidebarOpen }) {
                   }`}
                 >
                   <div className="flex items-center">
-                  <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 icon icon-tabler icon-tabler-drone" width="32" height="32" viewBox="0 0 24 24" stroke-width="1.5" stroke="#9e9e9e" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="shrink-0 w-6 h-6 icon icon-tabler icon-tabler-drone" width="32" height="32" viewBox="0 0 24 24" stroke-width="1.5" stroke="#9e9e9e" fill="none" stroke-linecap="round" stroke-linejoin="round">
   <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
   <path d="M10 10h4v4h-4z" />
   <line x1="10" y1="10" x2="6.5" y2="6.5" />
@@ -370,7 +370,7 @@ function Sidebar({ sidebarOpen, setSidebarOpen }) {
                   <div className="flex items-center">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
-                      class="icon w-6 h-6 icon-tabler icon-tabler-map-2"
+                      class="shrink-0 icon w-6 h-6 icon-tabler icon-tabler-map-2"
                       width="32"
                       height="32"
                       viewBox="0 0 24 24"
@@ -419,7 +419,7 @@ function Sidebar({ sidebarOpen, setSidebarOpen }) {
                   }`}
                 >
                   <div className="flex items-center">
-                  <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-sort-ascending-2" width="32" height="32" viewBox="0 0 24 24" stroke-width="1.5" stroke="#9e9e9e" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="shrink-0 icon icon-tabler icon-tabler-sort-ascending-2" width="32" height="32" viewBox="0 0 24 24" stroke-width="1.5" stroke="#9e9e9e" fill="none" stroke-linecap="round" stroke-linejoin="round">
   <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
   <path d="M14 9l3 -3l3 3" />
   <rect x="5" y="5" width="5" height="5" rx=".5" />
@@ -453,7 +453,7 @@ function Sidebar({ sidebarOpen, setSidebarOpen }) {
                   <div className="flex items-center">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
-                      class="icon w-6 h-6 icon-tabler icon-tabler-map-2"
+                      class="icon w-6 shrink-0 h-6 icon-tabler icon-tabler-map-2"
                       width="32"
                       height="32"
                       viewBox="0 0 24 24"
@@ -502,7 +502,7 @@ function Sidebar({ sidebarOpen, setSidebarOpen }) {
                   }`}
                 >
                   <div className="flex items-center">
-                  <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 icon icon-tabler icon-tabler-question-mark" width="32" height="32" viewBox="0 0 24 24" stroke-width="1.5" stroke="#9e9e9e" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="shrink-0 w-6 h-6 icon icon-tabler icon-tabler-question-mark" width="32" height="32" viewBox="0 0 24 24" stroke-width="1.5" stroke="#9e9e9e" fill="none" stroke-linecap="round" stroke-linejoin="round">
   <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
   <path d="M8 8a3.5 3 0 0 1 3.5 -3h1a3.5 3 0 0 1 3.5 3a3 3 0 0 1 -2 3a3 4 0 0 0 -2 4" />
   <line x1="12" y1="19" x2="12" y2="19.01" />
@@ -534,7 +534,7 @@ function Sidebar({ sidebarOpen, setSidebarOpen }) {
                   <div className="flex items-center">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
-                      class="w-6 h-6 icon icon-tabler icon-tabler-settings"
+                      class="w-6 h-6 shrink-0 icon icon-tabler icon-tabler-settings"
                       width="32"
                       height="32"
                       viewBox="0 0 24 24"
