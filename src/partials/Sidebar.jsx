@@ -223,7 +223,7 @@ function Sidebar({ sidebarOpen, setSidebarOpen }) {
                   end
                   to="/map"
                   className={`block text-slate-200 truncate transition duration-150 ${
-                    pathname.includes("projects")
+                    pathname.includes("map")
                       ? "hover:text-slate-200"
                       : "hover:text-white"
                   }`}
@@ -258,6 +258,299 @@ function Sidebar({ sidebarOpen, setSidebarOpen }) {
 
                     <span className="text-sm font-medium ml-3 lg:opacity-0 lg:sidebar-expanded:opacity-100 2xl:opacity-100 duration-200">
                       Map
+                    </span>
+                  </div>
+                </NavLink>
+              </li>
+
+              {/* Flight Logs*/}
+
+              <li
+                className={`px-3 py-2 rounded-sm mb-0.5 last:mb-0 ${
+                  pathname.includes("flightLogs") && "bg-slate-900"
+                }`}
+              >
+                <NavLink
+                  end
+                  to="/flightLogs"
+                  className={`block text-slate-200 truncate transition duration-150 ${
+                    pathname.includes("flightLogs")
+                      ? "hover:text-slate-200"
+                      : "hover:text-white"
+                  }`}
+                >
+                  <div className="flex items-center">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="icon w-6 h-6 icon-tabler icon-tabler-map-2"
+                      width="32"
+                      height="32"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="#9e9e9e"
+                      fill="none"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                      <line x1="18" y1="6" x2="18" y2="6.01" />
+                      <path
+                        d="M18 13l-3.5 -5a4 4 0 1 1 7 0l-3.5 5"
+                        className={`fill-current ${
+                          pathname.includes("flightLogs")
+                            ? "text-indigo-500"
+                            : "text-slate-600"
+                        }`}
+                      />
+                      <polyline points="10.5 4.75 9 4 3 7 3 20 9 17 15 20 21 17 21 15" />
+                      <line x1="9" y1="4" x2="9" y2="17" />
+                      <line x1="15" y1="15" x2="15" y2="20" />
+                    </svg>
+
+                    <span className="text-sm font-medium ml-3 lg:opacity-0 lg:sidebar-expanded:opacity-100 2xl:opacity-100 duration-200">
+                      Flight Logs
+                    </span>
+                  </div>
+                </NavLink>
+              </li>
+
+              {/* Equipment */}
+
+              <li
+                className={`px-3 py-2 rounded-sm mb-0.5 last:mb-0 ${
+                  pathname.includes("equipment") && "bg-slate-900"
+                }`}
+              >
+                <NavLink
+                  end
+                  to="/equipment"
+                  className={`block text-slate-200 truncate transition duration-150 ${
+                    pathname.includes("equipment")
+                      ? "hover:text-slate-200"
+                      : "hover:text-white"
+                  }`}
+                >
+                  <div className="flex items-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 icon icon-tabler icon-tabler-drone" width="32" height="32" viewBox="0 0 24 24" stroke-width="1.5" stroke="#9e9e9e" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M10 10h4v4h-4z" />
+  <line x1="10" y1="10" x2="6.5" y2="6.5" />
+  <path d="M9.96 6a3.5 3.5 0 1 0 -3.96 3.96" />
+  <path d="M14 10l3.5 -3.5" />
+  <path d="M18 9.96a3.5 3.5 0 1 0 -3.96 -3.96" />
+  <line x1="14" y1="14" x2="17.5" y2="17.5" />
+  <path d="M14.04 18a3.5 3.5 0 1 0 3.96 -3.96" />
+  <line x1="10" y1="14" x2="6.5" y2="17.5" />
+  <path d="M6 14.04a3.5 3.5 0 1 0 3.96 3.96" />
+</svg>
+
+                    <span className="text-sm font-medium ml-3 lg:opacity-0 lg:sidebar-expanded:opacity-100 2xl:opacity-100 duration-200">
+                      Equipment
+                    </span>
+                  </div>
+                </NavLink>
+              </li>
+
+              {/* Pilots */}
+
+              <li
+                className={`px-3 py-2 rounded-sm mb-0.5 last:mb-0 ${
+                  pathname.includes("pilots") && "bg-slate-900"
+                }`}
+              >
+                <NavLink
+                  end
+                  to="/pilots"
+                  className={`block text-slate-200 truncate transition duration-150 ${
+                    pathname.includes("pilots")
+                      ? "hover:text-slate-200"
+                      : "hover:text-white"
+                  }`}
+                >
+                  <div className="flex items-center">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="icon w-6 h-6 icon-tabler icon-tabler-map-2"
+                      width="32"
+                      height="32"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="#9e9e9e"
+                      fill="none"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                      <line x1="18" y1="6" x2="18" y2="6.01" />
+                      <path
+                        d="M18 13l-3.5 -5a4 4 0 1 1 7 0l-3.5 5"
+                        className={`fill-current ${
+                          pathname.includes("pilots")
+                            ? "text-indigo-500"
+                            : "text-slate-600"
+                        }`}
+                      />
+                      <polyline points="10.5 4.75 9 4 3 7 3 20 9 17 15 20 21 17 21 15" />
+                      <line x1="9" y1="4" x2="9" y2="17" />
+                      <line x1="15" y1="15" x2="15" y2="20" />
+                    </svg>
+
+                    <span className="text-sm font-medium ml-3 lg:opacity-0 lg:sidebar-expanded:opacity-100 2xl:opacity-100 duration-200">
+                      Pilots
+                    </span>
+                  </div>
+                </NavLink>
+              </li>
+
+              {/* Apps*/}
+
+              <li
+                className={`px-3 py-2 rounded-sm mb-0.5 last:mb-0 ${
+                  pathname.includes("apps") && "bg-slate-900"
+                }`}
+              >
+                <NavLink
+                  end
+                  to="/apps"
+                  className={`block text-slate-200 truncate transition duration-150 ${
+                    pathname.includes("apps")
+                      ? "hover:text-slate-200"
+                      : "hover:text-white"
+                  }`}
+                >
+                  <div className="flex items-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-sort-ascending-2" width="32" height="32" viewBox="0 0 24 24" stroke-width="1.5" stroke="#9e9e9e" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M14 9l3 -3l3 3" />
+  <rect x="5" y="5" width="5" height="5" rx=".5" />
+  <rect x="5" y="14" width="5" height="5" rx=".5" />
+  <path d="M17 6v12" />
+</svg>
+
+                    <span className="text-sm font-medium ml-3 lg:opacity-0 lg:sidebar-expanded:opacity-100 2xl:opacity-100 duration-200">
+                      Apps
+                    </span>
+                  </div>
+                </NavLink>
+              </li>
+
+              {/* Organization */}
+
+              <li
+                className={`px-3 py-2 rounded-sm mb-0.5 last:mb-0 ${
+                  pathname.includes("organization") && "bg-slate-900"
+                }`}
+              >
+                <NavLink
+                  end
+                  to="/organization"
+                  className={`block text-slate-200 truncate transition duration-150 ${
+                    pathname.includes("organization")
+                      ? "hover:text-slate-200"
+                      : "hover:text-white"
+                  }`}
+                >
+                  <div className="flex items-center">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="icon w-6 h-6 icon-tabler icon-tabler-map-2"
+                      width="32"
+                      height="32"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="#9e9e9e"
+                      fill="none"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                      <line x1="18" y1="6" x2="18" y2="6.01" />
+                      <path
+                        d="M18 13l-3.5 -5a4 4 0 1 1 7 0l-3.5 5"
+                        className={`fill-current ${
+                          pathname.includes("organization")
+                            ? "text-indigo-500"
+                            : "text-slate-600"
+                        }`}
+                      />
+                      <polyline points="10.5 4.75 9 4 3 7 3 20 9 17 15 20 21 17 21 15" />
+                      <line x1="9" y1="4" x2="9" y2="17" />
+                      <line x1="15" y1="15" x2="15" y2="20" />
+                    </svg>
+
+                    <span className="text-sm font-medium ml-3 lg:opacity-0 lg:sidebar-expanded:opacity-100 2xl:opacity-100 duration-200">
+                      Organization
+                    </span>
+                  </div>
+                </NavLink>
+              </li>
+
+              {/* help */}
+
+              <li
+                className={`px-3 py-2 rounded-sm mb-0.5 last:mb-0 ${
+                  pathname.includes("help") && "bg-slate-900"
+                }`}
+              >
+                <NavLink
+                  end
+                  to="/help"
+                  className={`block text-slate-200 truncate transition duration-150 ${
+                    pathname.includes("help")
+                      ? "hover:text-slate-200"
+                      : "hover:text-white"
+                  }`}
+                >
+                  <div className="flex items-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 icon icon-tabler icon-tabler-question-mark" width="32" height="32" viewBox="0 0 24 24" stroke-width="1.5" stroke="#9e9e9e" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M8 8a3.5 3 0 0 1 3.5 -3h1a3.5 3 0 0 1 3.5 3a3 3 0 0 1 -2 3a3 4 0 0 0 -2 4" />
+  <line x1="12" y1="19" x2="12" y2="19.01" />
+</svg>
+
+                    <span className="text-sm font-medium ml-3 lg:opacity-0 lg:sidebar-expanded:opacity-100 2xl:opacity-100 duration-200">
+                      Help
+                    </span>
+                  </div>
+                </NavLink>
+              </li>
+
+              {/* Preferences */}
+
+              <li
+                className={`px-3 py-2 rounded-sm mb-0.5 last:mb-0 ${
+                  pathname.includes("preferences") && "bg-slate-900"
+                }`}
+              >
+                <NavLink
+                  end
+                  to="/preferences"
+                  className={`block text-slate-200 truncate transition duration-150 ${
+                    pathname.includes("preferences")
+                      ? "hover:text-slate-200"
+                      : "hover:text-white"
+                  }`}
+                >
+                  <div className="flex items-center">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="w-6 h-6 icon icon-tabler icon-tabler-settings"
+                      width="32"
+                      height="32"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="#9e9e9e"
+                      fill="none"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                      <path  d="M10.325 4.317c.426 -1.756 2.924 -1.756 3.35 0a1.724 1.724 0 0 0 2.573 1.066c1.543 -.94 3.31 .826 2.37 2.37a1.724 1.724 0 0 0 1.065 2.572c1.756 .426 1.756 2.924 0 3.35a1.724 1.724 0 0 0 -1.066 2.573c.94 1.543 -.826 3.31 -2.37 2.37a1.724 1.724 0 0 0 -2.572 1.065c-.426 1.756 -2.924 1.756 -3.35 0a1.724 1.724 0 0 0 -2.573 -1.066c-1.543 .94 -3.31 -.826 -2.37 -2.37a1.724 1.724 0 0 0 -1.065 -2.572c-1.756 -.426 -1.756 -2.924 0 -3.35a1.724 1.724 0 0 0 1.066 -2.573c-.94 -1.543 .826 -3.31 2.37 -2.37c1 .608 2.296 .07 2.572 -1.065z" />
+                      <circle cx="12" cy="12" r="3" />
+                    </svg>
+
+                    <span className="text-sm font-medium ml-3 lg:opacity-0 lg:sidebar-expanded:opacity-100 2xl:opacity-100 duration-200">
+                      Preferences
                     </span>
                   </div>
                 </NavLink>
