@@ -1,13 +1,13 @@
 import React, { useState } from 'react';
-import Sidebar from '../../partials/Sidebar';
 import Header from '../../partials/Header';
-import PreferencesBody from '../../partials/preferences/PreferencesBody';
+import Sidebar from '../../partials/Sidebar';
+import AppBody from '../../partials/app/AppBody';
 
-const Preferences = () => {
+const AppsPage = () => {
     const [sidebarOpen, setSidebarOpen] = useState(false);
-    
-    return (
-        <div className="flex h-screen overflow-hidden">
+
+  return (
+    <div className="flex h-screen overflow-hidden">
       {/* Sidebar */}
       <Sidebar sidebarOpen={sidebarOpen} setSidebarOpen={setSidebarOpen} />
 
@@ -18,7 +18,7 @@ const Preferences = () => {
 
         <main>
           <div className="relative flex">
-            <PreferencesBody/>
+            <AppBody/> 
           </div>
         </main>
       </div>
@@ -26,4 +26,4 @@ const Preferences = () => {
     );
 };
 
-export default Preferences;
+export default AppsPage;

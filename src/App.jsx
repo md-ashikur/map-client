@@ -91,6 +91,7 @@ import Equipment from "./pages/equipment/Equipment";
 import Pilots from "./pages/Pilots/Pilots";
 import Organization from "./pages/organization/Organization";
 import Preferences from "./pages/preferences/Preferences";
+import AppsPage from "./pages/apps/AppsPage";
 
 
 
@@ -114,6 +115,7 @@ function App() {
         <Route path="/pilots" element={<Pilots/>} />
         <Route path="/organization" element={<Organization />} />
         <Route path="/preferences" element={<Preferences />} />
+        <Route path="/appsPage" element={<AppsPage />} />
 
         {/* help----------- */}
         <Route path="/help/what-my-data-mean" element={<MyDataMean />} />
