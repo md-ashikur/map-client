@@ -278,50 +278,9 @@ const MapSideBar = ({ sidebarOpen, setSidebarOpen }) => {
       ></div>
 
       {/* Sidebar */}
-      <div id="sidebar">
+      <div  id="sidebar">
         {/* Sidebar header */}
-        <div className="flex justify-between mb-10 pr-3 sm:px-2">
-          {/* Logo */}
-          <NavLink end to="/" className="block">
-            <svg width="32" height="32" viewBox="0 0 32 32">
-              <defs>
-                <linearGradient
-                  x1="28.538%"
-                  y1="20.229%"
-                  x2="100%"
-                  y2="108.156%"
-                  id="logo-a"
-                >
-                  <stop stopColor="#A5B4FC" stopOpacity="0" offset="0%" />
-                  <stop stopColor="#A5B4FC" offset="100%" />
-                </linearGradient>
-                <linearGradient
-                  x1="88.638%"
-                  y1="29.267%"
-                  x2="22.42%"
-                  y2="100%"
-                  id="logo-b"
-                >
-                  <stop stopColor="#38BDF8" stopOpacity="0" offset="0%" />
-                  <stop stopColor="#38BDF8" offset="100%" />
-                </linearGradient>
-              </defs>
-              <rect fill="#6366F1" width="32" height="32" rx="16" />
-              <path
-                d="M18.277.16C26.035 1.267 32 7.938 32 16c0 8.837-7.163 16-16 16a15.937 15.937 0 01-10.426-3.863L18.277.161z"
-                fill="#4F46E5"
-              />
-              <path
-                d="M7.404 2.503l18.339 26.19A15.93 15.93 0 0116 32C7.163 32 0 24.837 0 16 0 10.327 2.952 5.344 7.404 2.503z"
-                fill="url(#logo-a)"
-              />
-              <path
-                d="M2.223 24.14L29.777 7.86A15.926 15.926 0 0132 16c0 8.837-7.163 16-16 16-5.864 0-10.991-3.154-13.777-7.86z"
-                fill="url(#logo-b)"
-              />
-            </svg>
-          </NavLink>
-        </div>
+       
         <div className="bg-[#f37a10] lg:hidden block text-white p-2 rounded-lg mb-2 text-xs">
               Trial expires in 4 days.
               <a href="/" className="underline font-bold">
@@ -333,17 +292,7 @@ const MapSideBar = ({ sidebarOpen, setSidebarOpen }) => {
         <div className="space-y-8">
           {/* Pages group */}
           <div>
-            <h3 className="text-xs uppercase text-slate-500 font-semibold pl-3">
-              <span
-                className="hidden lg:block lg:sidebar-expanded:hidden 2xl:hidden text-center w-6"
-                aria-hidden="true"
-              >
-                •••
-              </span>
-              <span className="lg:hidden lg:sidebar-expanded:block 2xl:block">
-                Pages
-              </span>
-            </h3>
+            
             <ul className="mt-3">
               {/* Projects */}
 
@@ -353,7 +302,7 @@ const MapSideBar = ({ sidebarOpen, setSidebarOpen }) => {
                 }
                 className={`px-3 py-2 rounded-sm mb-0.5 last:mb-0 ${
                   pathname === "/" || pathname.includes("projects")
-                    ? "bg-slate-900"
+                    ? "bg-primary-dark"
                     : ""
                 }`}
               >
@@ -403,7 +352,7 @@ const MapSideBar = ({ sidebarOpen, setSidebarOpen }) => {
 
               <li
                 className={`px-3 py-2 rounded-sm mb-0.5 last:mb-0 ${
-                  pathname.includes("map") && "bg-slate-900"
+                  pathname.includes("map") && "bg-primary-dark"
                 }`}
               >
                 <NavLink
@@ -545,7 +494,7 @@ const MapSideBar = ({ sidebarOpen, setSidebarOpen }) => {
 
               <li
                 className={`px-3 py-2 rounded-sm mb-0.5 last:mb-0 ${
-                  pathname.includes("pilots") && "bg-slate-900"
+                  pathname.includes("pilots") && "bg-primary-dark"
                 }`}
               >
                 <NavLink
@@ -596,7 +545,7 @@ const MapSideBar = ({ sidebarOpen, setSidebarOpen }) => {
 
               <li
                 className={`px-3 py-2 rounded-sm mb-0.5 last:mb-0 ${
-                  pathname.includes("appsPage") && "bg-slate-900"
+                  pathname.includes("appsPage") && "bg-primary-dark"
                 }`}
               >
                 <NavLink
@@ -639,7 +588,7 @@ const MapSideBar = ({ sidebarOpen, setSidebarOpen }) => {
 
               <li
                 className={`px-3 py-2 rounded-sm mb-0.5 last:mb-0 ${
-                  pathname.includes("organization") && "bg-slate-900"
+                  pathname.includes("organization") && "bg-primary-dark"
                 }`}
               >
                 <NavLink
@@ -689,7 +638,7 @@ const MapSideBar = ({ sidebarOpen, setSidebarOpen }) => {
               {/* help------- */}
               <li
                 className={`px-3 py-2 rounded-sm mb-0.5 last:mb-0 ${
-                  pathname.includes("help") && "bg-slate-900"
+                  pathname.includes("help") && "bg-primary-dark"
                 }`}
                 onClick={ToggleSidebar}
               >
@@ -741,7 +690,7 @@ const MapSideBar = ({ sidebarOpen, setSidebarOpen }) => {
 
               <li
                 className={`px-3 py-2 rounded-sm mb-0.5 last:mb-0 ${
-                  pathname.includes("preferences") && "bg-slate-900"
+                  pathname.includes("preferences") && "bg-primary-dark"
                 }`}
               >
                 <NavLink
@@ -1693,7 +1642,7 @@ const MapSideBar = ({ sidebarOpen, setSidebarOpen }) => {
               {/* Messages */}
               <li
                 className={`px-3 py-2 rounded-sm mb-0.5 last:mb-0 ${
-                  pathname.includes("messages") && "bg-slate-900"
+                  pathname.includes("messages") && "bg-primary-dark"
                 }`}
               >
                 <NavLink
@@ -1741,7 +1690,7 @@ const MapSideBar = ({ sidebarOpen, setSidebarOpen }) => {
               {/* Inbox */}
               <li
                 className={`px-3 py-2 rounded-sm mb-0.5 last:mb-0 ${
-                  pathname.includes("inbox") && "bg-slate-900"
+                  pathname.includes("inbox") && "bg-primary-dark"
                 }`}
               >
                 <NavLink
@@ -1781,7 +1730,7 @@ const MapSideBar = ({ sidebarOpen, setSidebarOpen }) => {
               {/* Calendar */}
               <li
                 className={`px-3 py-2 rounded-sm mb-0.5 last:mb-0 ${
-                  pathname.includes("calendar") && "bg-slate-900"
+                  pathname.includes("calendar") && "bg-primary-dark"
                 }`}
               >
                 <NavLink
@@ -1821,7 +1770,7 @@ const MapSideBar = ({ sidebarOpen, setSidebarOpen }) => {
               {/* Campaigns */}
               <li
                 className={`px-3 py-2 rounded-sm mb-0.5 last:mb-0 ${
-                  pathname.includes("campaigns") && "bg-slate-900"
+                  pathname.includes("campaigns") && "bg-primary-dark"
                 }`}
               >
                 <NavLink
@@ -2702,7 +2651,9 @@ const MapSideBar = ({ sidebarOpen, setSidebarOpen }) => {
             </ul>
           </div>
         </div>
+      
       </div>
+      
     </div>
   );
 };

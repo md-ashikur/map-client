@@ -15,7 +15,7 @@ const Annotating = () => {
                         
                         <div className="form-inline ml-auto">
                             <div className="" onClick={ToggleSidebar} >
-                                Help
+                               annotating
                             </div>
                         </div>
                   
