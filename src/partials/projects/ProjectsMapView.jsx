@@ -1,5 +1,5 @@
 import React from 'react';
-import mapview from '../../images/mapview.jpg';
+import mapview from '../../images/mapview.png';
 
 const ProjectsMapView = () => {
     return (

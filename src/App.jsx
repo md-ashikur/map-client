@@ -110,9 +110,9 @@ function App() {
     <>
       <Routes>
         
-        <Route exact path="/" element={<Projects />} />
+        
 
-        <Route exact path="/projects" element={<Projects />} >
+        <Route exact path="/" element={<Projects />} >
      
         <Route active path="projects-list-view" element={<ProjectsList />} />
         <Route  path="projects-map-view" element={<ProjectsMapView />} />

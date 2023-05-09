@@ -25,7 +25,7 @@ const ProjectViewTabs = () => {
           >
             <NavLink
               className="whitespace-nowrap flex items-center"
-              to="/projects/projects-list-view"
+              to="/projects-list-view"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -56,7 +56,7 @@ const ProjectViewTabs = () => {
           >
             <NavLink
               className="whitespace-nowrap flex items-center"
-              to="/projects/projects-map-view"
+              to="/projects-map-view"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
