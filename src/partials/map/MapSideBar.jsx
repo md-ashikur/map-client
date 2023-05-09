@@ -281,7 +281,7 @@ const MapSideBar = ({ sidebarOpen, setSidebarOpen }) => {
       <div  id="sidebar">
         {/* Sidebar header */}
        
-        <div className="bg-[#f37a10] lg:hidden block text-white p-2 rounded-lg mb-2 text-xs">
+        <div className="bg-[#f37a10] lg:hidden block text-white p-2 rounded-lg -mt-3 text-xs">
               Trial expires in 4 days.
               <a href="/" className="underline font-bold">
                 Upgrade now.

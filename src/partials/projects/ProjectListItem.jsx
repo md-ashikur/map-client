@@ -31,11 +31,10 @@ const ProjectListItem = (props) => {
               {props.role}
             </Link>
             {/* example  */}
-            
-              
- {/* Start */}
- <div className="text-xs m-2 inline-flex font-medium bg-slate-700 text-slate-100 rounded-full text-center px-2.5 py-1">
- <svg
+
+            {/* Start */}
+            <div className="text-xs m-2 inline-flex font-medium bg-slate-700 text-slate-100 rounded-full text-center px-2.5 py-1">
+              <svg
                 xmlns="http://www.w3.org/2000/svg"
                 class="icon mr-2 icon-tabler icon-tabler-box-multiple"
                 width="16"
@@ -51,11 +50,9 @@ const ProjectListItem = (props) => {
                 <rect x="7" y="3" width="14" height="14" rx="2" />
                 <path d="M17 17v2a2 2 0 0 1 -2 2h-10a2 2 0 0 1 -2 -2v-10a2 2 0 0 1 2 -2h2" />
               </svg>
-    
-    Example</div>
-                      {/* End */}
-            
-           
+              Example
+            </div>
+            {/* End */}
           </div>
         </div>
         {/* Right side */}

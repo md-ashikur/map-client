@@ -92,6 +92,8 @@ import Pilots from "./pages/Pilots/Pilots";
 import Organization from "./pages/organization/Organization";
 import Preferences from "./pages/preferences/Preferences";
 import AppsPage from "./pages/apps/AppsPage";
+import ProjectsMapView from "./partials/projects/ProjectsMapView";
+import ProjectsList from "./partials/projects/ProjectsList";
 
 
 
@@ -109,6 +111,14 @@ function App() {
       <Routes>
         
         <Route exact path="/" element={<Projects />} />
+
+        <Route exact path="/projects" element={<Projects />} >
+     
+        <Route active path="projects-list-view" element={<ProjectsList />} />
+        <Route  path="projects-map-view" element={<ProjectsMapView />} />
+        </Route>
+      
+
         <Route path="/map" element={<Map />} />
         <Route path="/flightLogs" element={<FlightLogs />} />
         <Route path="/equipment" element={<Equipment/>} />

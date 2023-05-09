@@ -5,7 +5,7 @@ const QuickAccess = () => {
   return (
     <React.Fragment>
       {/* Card 1 */}
-      <div className="relative col-span-4 sm:col-span-6 xl:col-span-3 bg-white shadow-lg rounded-lg border border-slate-200 overflow-hidden">
+      <div className="relative basis-1/2 max-w-[170px] lg:max-w-[200px] h-52 bg-white shadow-lg rounded-lg border border-slate-200 overflow-hidden">
         {/* Image */}
         <img
           className="absolute w-full h-full object-cover"
@@ -36,7 +36,7 @@ const QuickAccess = () => {
 
 
       {/* Card 2 */}
-      <div className="relative h-52 col-span-4 sm:col-span-6 xl:col-span-3 bg-white shadow-lg rounded-lg border border-slate-200 overflow-hidden">
+      <div className="relative basis-1/2 max-w-[170px] lg:max-w-[200px]  h-52 bg-white shadow-lg rounded-lg border border-slate-200 overflow-hidden">
         {/* Image */}
         <img
           className="absolute w-full h-full object-cover"
@@ -67,7 +67,7 @@ const QuickAccess = () => {
 
       
       {/* Card 3 */}
-      <div className="relative col-span-4 sm:col-span-6 xl:col-span-3 bg-white shadow-lg rounded-lg border border-slate-200 overflow-hidden">
+      <div className="relative basis-1/2 max-w-[170px] lg:max-w-[200px]  h-52 bg-white shadow-lg rounded-lg border border-slate-200 overflow-hidden">
         {/* Image */}
         <img
           className="absolute w-full h-full object-cover"
