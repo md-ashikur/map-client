@@ -114,8 +114,8 @@ function App() {
 
         <Route exact path="/" element={<Projects />} >
      
-        <Route active path="projects-list-view" element={<ProjectsList />} />
-        <Route  path="projects-map-view" element={<ProjectsMapView />} />
+        <Route path="projects-list-view" element={<ProjectsList />} />
+        <Route path="projects-map-view" element={<ProjectsMapView />} />
         </Route>
       
 
