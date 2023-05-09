@@ -5,13 +5,13 @@ import DropdownEditMenu from "../../components/DropdownEditMenu";
 const ProjectListItem = (props) => {
   return (
     <div
-      className={`shadow-lg rounded-sm border px-5 py-4 ${
+      className={`shadow-lg rounded-sm border w-full m-2  px-5 py-4 ${
         props.type === "Featured"
           ? "bg-amber-50 border-amber-300"
           : "bg-white border-slate-200"
       }`}
     >
-      <div className="md:flex justify-between items-center space-y-4 md:space-y-0 space-x-2">
+      <div className="md:flex  justify-between  items-center space-y-4 md:space-y-0 space-x-2">
         {/* Left side */}
         <div className="flex items-start items-center space-x-3 md:space-x-4">
           <div className="w-9 h-9 shrink-0 mt-1">

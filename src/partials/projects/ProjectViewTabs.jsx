@@ -7,26 +7,28 @@ import { Pagination } from "swiper";
 import "swiper/css";
 import "swiper/css/pagination";
 import { NavLink, Outlet, useLocation } from "react-router-dom";
+import "./ProjectViewTabs.css";
+import ProjectsMapView from "./ProjectsMapView";
+
 
 const ProjectViewTabs = () => {
-  const location = useLocation();
-  const { pathname } = location;
+  const [activeTab, setActiveTab] = useState(0);
+
+  const handleTabClick = (index) => {
+    setActiveTab(index);
+  };
 
   return (
-    <div>
-      {/* Start */}
-      <div className="mb-8 ">
-        <ul className="text-sm font-medium flex flex-nowrap  overflow-x-scroll no-scrollbar">
-          <li
-            className={`px-3 py-2 rounded-sm mb-0.5 last:mb-0 ${
-              pathname.includes("projects-list-view") &&
-              "border-b-2 border-b-primary-dark text-primary-dark"
-            }`}
+    <div className="">
+     
+    
+      <div className="tabs">
+        <div className="tab-header">
+          <div
+            className={activeTab === 0 ? "active" : ""}
+            onClick={() => handleTabClick(0)}
           >
-            <NavLink
-              className="whitespace-nowrap flex items-center"
-              to="/projects-list-view"
-            >
+              <div className="flex justify-center items-center">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 class="w-5 h-5 mr-2 shrink-0 icon icon-tabler icon-tabler-list-details"
@@ -46,19 +48,14 @@ const ProjectViewTabs = () => {
                 <rect x="3" y="14" width="6" height="6" rx="1" />
               </svg>
               <span>List</span>
-            </NavLink>
-          </li>
-          <li
-            className={`px-3 py-2 rounded-sm mb-0.5 last:mb-0 ${
-              pathname.includes("map-view") &&
-              "border-b-2 border-b-primary-dark text-primary-dark"
-            }`}
+           </div>
+          </div>
+          <div
+            className={activeTab === 1 ? "active" : ""}
+            onClick={() => handleTabClick(1)}
           >
-            <NavLink
-              className="whitespace-nowrap flex items-center"
-              to="/projects-map-view"
-            >
-              <svg
+           <div className="flex justify-center items-center">
+           <svg
                 xmlns="http://www.w3.org/2000/svg"
                 class="w-5 h-5 mr-2 shrink-0 icon icon-tabler icon-tabler-list-details"
                 viewBox="0 0 24 24"
@@ -77,14 +74,22 @@ const ProjectViewTabs = () => {
                 <rect x="3" y="14" width="6" height="6" rx="1" />
               </svg>
               <span>Map</span>
-            </NavLink>
-          </li>
-          
-        </ul>
+           </div>
+          </div>
+        </div>
+        <div className="tab-content">
+          <div className={activeTab === 0 ? "active" : ""}>
+            <ProjectsList/>
+          </div>
+          <div className={activeTab === 1 ? "active" : ""}>
+            <ProjectsMapView/>
+          </div>
+        </div>
       </div>
-      {/* End */}
-      <Outlet/>
-      {/* =============== */}
+    
+
+     
+     
     </div>
   );
 };

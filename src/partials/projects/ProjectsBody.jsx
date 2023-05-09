@@ -9,7 +9,7 @@ const ProjectsBody = () => {
   const [feedbackModalOpen, setFeedbackModalOpen] = useState(false);
 
   return (
-    <div className="bg flex flex-col flex-1 my-5 lg:mx-28 mx-5">
+    <div className="flex flex-col flex-1 my-5 lg:mx-28 mx-5">
       {/* quick access */}
       <div className="mt-8">
         <h2 className="text-xl leading-snug text-slate-800 font-bold mb-5">
@@ -21,7 +21,7 @@ const ProjectsBody = () => {
       </div>
 
       {/* all projects */}
-      <div className="mt-8">
+      <div className="mt-8 ">
         <h2 className="text-xl leading-snug text-slate-800 font-bold mb-5">
           All Projects
         </h2>
