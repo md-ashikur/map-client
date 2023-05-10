@@ -58,7 +58,7 @@ const MapSideBar = ({ sidebarOpen, setSidebarOpen }) => {
                   className={({ isActive }) =>
                     "block transition duration-150 truncate " +
                     (isActive
-                      ? "text-indigo-500"
+                      ? "text-secondary-light"
                       : "text-slate-400 hover:text-slate-200")
                   }
                 >
@@ -74,7 +74,7 @@ const MapSideBar = ({ sidebarOpen, setSidebarOpen }) => {
                   className={({ isActive }) =>
                     "block transition duration-150 truncate " +
                     (isActive
-                      ? "text-indigo-500"
+                      ? "text-secondary-light"
                       : "text-slate-400 hover:text-slate-200")
                   }
                 >
@@ -90,7 +90,7 @@ const MapSideBar = ({ sidebarOpen, setSidebarOpen }) => {
                   className={({ isActive }) =>
                     "block transition duration-150 truncate " +
                     (isActive
-                      ? "text-indigo-500"
+                      ? "text-secondary-light"
                       : "text-slate-400 hover:text-slate-200")
                   }
                 >
@@ -106,7 +106,7 @@ const MapSideBar = ({ sidebarOpen, setSidebarOpen }) => {
                   className={({ isActive }) =>
                     "block transition duration-150 truncate " +
                     (isActive
-                      ? "text-indigo-500"
+                      ? "text-secondary-light"
                       : "text-slate-400 hover:text-slate-200")
                   }
                 >
@@ -122,7 +122,7 @@ const MapSideBar = ({ sidebarOpen, setSidebarOpen }) => {
                   className={({ isActive }) =>
                     "block transition duration-150 truncate " +
                     (isActive
-                      ? "text-indigo-500"
+                      ? "text-secondary-light"
                       : "text-slate-400 hover:text-slate-200")
                   }
                 >
@@ -138,7 +138,7 @@ const MapSideBar = ({ sidebarOpen, setSidebarOpen }) => {
                   className={({ isActive }) =>
                     "block transition duration-150 truncate " +
                     (isActive
-                      ? "text-indigo-500"
+                      ? "text-secondary-light"
                       : "text-slate-400 hover:text-slate-200")
                   }
                 >
@@ -154,7 +154,7 @@ const MapSideBar = ({ sidebarOpen, setSidebarOpen }) => {
                   className={({ isActive }) =>
                     "block transition duration-150 truncate " +
                     (isActive
-                      ? "text-indigo-500"
+                      ? "text-secondary-light"
                       : "text-slate-400 hover:text-slate-200")
                   }
                 >
@@ -170,7 +170,7 @@ const MapSideBar = ({ sidebarOpen, setSidebarOpen }) => {
                   className={({ isActive }) =>
                     "block transition duration-150 truncate " +
                     (isActive
-                      ? "text-indigo-500"
+                      ? "text-secondary-light"
                       : "text-slate-400 hover:text-slate-200")
                   }
                 >
@@ -186,7 +186,7 @@ const MapSideBar = ({ sidebarOpen, setSidebarOpen }) => {
                   className={({ isActive }) =>
                     "block transition duration-150 truncate " +
                     (isActive
-                      ? "text-indigo-500"
+                      ? "text-secondary-light"
                       : "text-slate-400 hover:text-slate-200")
                   }
                 >
@@ -202,7 +202,7 @@ const MapSideBar = ({ sidebarOpen, setSidebarOpen }) => {
                   className={({ isActive }) =>
                     "block transition duration-150 truncate " +
                     (isActive
-                      ? "text-indigo-500"
+                      ? "text-secondary-light"
                       : "text-slate-400 hover:text-slate-200")
                   }
                 >
@@ -218,7 +218,7 @@ const MapSideBar = ({ sidebarOpen, setSidebarOpen }) => {
                   className={({ isActive }) =>
                     "block transition duration-150 truncate " +
                     (isActive
-                      ? "text-indigo-500"
+                      ? "text-secondary-light"
                       : "text-slate-400 hover:text-slate-200")
                   }
                 >
@@ -234,7 +234,7 @@ const MapSideBar = ({ sidebarOpen, setSidebarOpen }) => {
                   className={({ isActive }) =>
                     "block transition duration-150 truncate " +
                     (isActive
-                      ? "text-indigo-500"
+                      ? "text-secondary-light"
                       : "text-slate-400 hover:text-slate-200")
                   }
                 >
@@ -250,7 +250,7 @@ const MapSideBar = ({ sidebarOpen, setSidebarOpen }) => {
                   className={({ isActive }) =>
                     "block transition duration-150 truncate " +
                     (isActive
-                      ? "text-indigo-500"
+                      ? "text-secondary-light"
                       : "text-slate-400 hover:text-slate-200")
                   }
                 >
@@ -333,7 +333,7 @@ const MapSideBar = ({ sidebarOpen, setSidebarOpen }) => {
                         stroke="none"
                         className={`fill-current ${
                           pathname === "/" || pathname.includes("projects")
-                            ? "text-indigo-500"
+                            ? "text-secondary-light"
                             : "text-slate-500"
                         }`}
                         d="M17.657 16.657l-4.243 4.243a2 2 0 0 1 -2.827 0l-4.244 -4.243a8 8 0 1 1 11.314 0z"
@@ -378,18 +378,34 @@ const MapSideBar = ({ sidebarOpen, setSidebarOpen }) => {
                       stroke-linejoin="round"
                     >
                       <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                      <line x1="18" y1="6" x2="18" y2="6.01" />
+                      <line  className={`stroke-current ${
+                          pathname.includes("map")
+                            ? "text-secondary-light"
+                            : "text-slate-600"
+                        }`} x1="18" y1="6" x2="18" y2="6.01" />
                       <path
                         d="M18 13l-3.5 -5a4 4 0 1 1 7 0l-3.5 5"
-                        className={`fill-current ${
+                        className={`stroke-current ${
                           pathname.includes("map")
-                            ? "text-indigo-500"
+                            ? "text-secondary-light"
                             : "text-slate-600"
                         }`}
                       />
-                      <polyline points="10.5 4.75 9 4 3 7 3 20 9 17 15 20 21 17 21 15" />
-                      <line x1="9" y1="4" x2="9" y2="17" />
-                      <line x1="15" y1="15" x2="15" y2="20" />
+                      <polyline  className={`stroke-current ${
+                          pathname.includes("map")
+                            ? "text-secondary-light"
+                            : "text-slate-600"
+                        }`} points="10.5 4.75 9 4 3 7 3 20 9 17 15 20 21 17 21 15" />
+                      <line  className={`stroke-current ${
+                          pathname.includes("map")
+                            ? "text-secondary"
+                            : "text-slate-600"
+                        }`} x1="9" y1="4" x2="9" y2="17" />
+                      <line  className={`stroke-current ${
+                          pathname.includes("map")
+                            ? "text-secondary"
+                            : "text-slate-600"
+                        }`} x1="15" y1="15" x2="15" y2="20" />
                     </svg>
 
                     <span className="text-sm font-medium ml-3 lg:opacity-100 lg:sidebar-expanded:opacity-100 2xl:opacity-100 duration-200">
@@ -408,31 +424,28 @@ const MapSideBar = ({ sidebarOpen, setSidebarOpen }) => {
                   className="block text-slate-200 truncate transition duration-150"
                 >
                   <div className="flex items-center">
-                    <svg
+                  <svg
                       xmlns="http://www.w3.org/2000/svg"
-                      class="icon shrink-0 w-6 h-6 icon-tabler icon-tabler-map-2"
+                      class="icon shrink-0 w-6 h-6 icon-tabler icon-tabler-brand-telegram"
                       width="32"
                       height="32"
                       viewBox="0 0 24 24"
                       stroke-width="1.5"
-                      stroke="#9e9e9e"
+                      stroke="#597e8d"
                       fill="none"
                       stroke-linecap="round"
                       stroke-linejoin="round"
                     >
                       <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                      <line x1="18" y1="6" x2="18" y2="6.01" />
                       <path
-                        d="M18 13l-3.5 -5a4 4 0 1 1 7 0l-3.5 5"
-                        className={`fill-current ${
-                          pathname.includes("flightLogs")
-                            ? "text-indigo-500"
-                            : "text-slate-600"
+                        className={`stroke-current ${
+                          pathname === "/flightLogs" ||
+                          pathname.includes("projects")
+                            ? "text-secondary-light"
+                            : "text-slate-500"
                         }`}
+                        d="M15 10l-4 4l6 6l4 -16l-18 7l4 2l2 6l3 -4"
                       />
-                      <polyline points="10.5 4.75 9 4 3 7 3 20 9 17 15 20 21 17 21 15" />
-                      <line x1="9" y1="4" x2="9" y2="17" />
-                      <line x1="15" y1="15" x2="15" y2="20" />
                     </svg>
 
                     <span className="text-sm font-medium ml-3 lg:opacity-100 lg:sidebar-expanded:opacity-100 2xl:opacity-100 duration-200">
@@ -459,7 +472,7 @@ const MapSideBar = ({ sidebarOpen, setSidebarOpen }) => {
                   }`}
                 >
                   <div className="flex items-center">
-                    <svg
+                  <svg
                       xmlns="http://www.w3.org/2000/svg"
                       class="shrink-0 w-6 h-6 icon icon-tabler icon-tabler-drone"
                       width="32"
@@ -472,15 +485,96 @@ const MapSideBar = ({ sidebarOpen, setSidebarOpen }) => {
                       stroke-linejoin="round"
                     >
                       <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                      <path d="M10 10h4v4h-4z" />
-                      <line x1="10" y1="10" x2="6.5" y2="6.5" />
-                      <path d="M9.96 6a3.5 3.5 0 1 0 -3.96 3.96" />
-                      <path d="M14 10l3.5 -3.5" />
-                      <path d="M18 9.96a3.5 3.5 0 1 0 -3.96 -3.96" />
-                      <line x1="14" y1="14" x2="17.5" y2="17.5" />
-                      <path d="M14.04 18a3.5 3.5 0 1 0 3.96 -3.96" />
-                      <line x1="10" y1="14" x2="6.5" y2="17.5" />
-                      <path d="M6 14.04a3.5 3.5 0 1 0 3.96 3.96" />
+                      <path
+                        className={`stroke-current ${
+                          pathname === "/equipment" ||
+                          pathname.includes("projects")
+                            ? "text-secondary-light"
+                            : "text-slate-500"
+                        }`}
+                        d="M10 10h4v4h-4z"
+                      />
+                      <line
+                        className={`stroke-current ${
+                          pathname === "/equipment" ||
+                          pathname.includes("projects")
+                            ? "text-secondary-light"
+                            : "text-slate-500"
+                        }`}
+                        x1="10"
+                        y1="10"
+                        x2="6.5"
+                        y2="6.5"
+                      />
+                      <path
+                        className={`stroke-current ${
+                          pathname === "/equipment" ||
+                          pathname.includes("projects")
+                            ? "text-secondary-light"
+                            : "text-slate-500"
+                        }`}
+                        d="M9.96 6a3.5 3.5 0 1 0 -3.96 3.96"
+                      />
+                      <path
+                        className={`stroke-current ${
+                          pathname === "/equipment" ||
+                          pathname.includes("projects")
+                            ? "text-secondary-light"
+                            : "text-slate-500"
+                        }`}
+                        d="M14 10l3.5 -3.5"
+                      />
+                      <path
+                        className={`stroke-current ${
+                          pathname === "/equipment" ||
+                          pathname.includes("projects")
+                            ? "text-secondary-light"
+                            : "text-slate-500"
+                        }`}
+                        d="M18 9.96a3.5 3.5 0 1 0 -3.96 -3.96"
+                      />
+                      <line
+                        className={`stroke-current ${
+                          pathname === "/equipment" ||
+                          pathname.includes("projects")
+                            ? "text-secondary-light"
+                            : "text-slate-500"
+                        }`}
+                        x1="14"
+                        y1="14"
+                        x2="17.5"
+                        y2="17.5"
+                      />
+                      <path
+                        className={`stroke-current ${
+                          pathname === "/equipment" ||
+                          pathname.includes("projects")
+                            ? "text-secondary-light"
+                            : "text-slate-500"
+                        }`}
+                        d="M14.04 18a3.5 3.5 0 1 0 3.96 -3.96"
+                      />
+                      <line
+                        className={`stroke-current ${
+                          pathname === "/equipment" ||
+                          pathname.includes("projects")
+                            ? "text-secondary-light"
+                            : "text-slate-500"
+                        }`}
+                        x1="10"
+                        y1="14"
+                        x2="6.5"
+                        y2="17.5"
+                      />
+                      <path
+                        className={`stroke-current ${
+                          pathname === "/equipment" ||
+                          pathname.includes("projects")
+                            ? "text-secondary-light"
+                            : "text-slate-500"
+                        }`}
+                        d="M6 14.04a3.5 3.5 0 1 0 3.96 3.96"
+                      />
                     </svg>
 
                     <span className="text-sm font-medium ml-3 lg:opacity-100 lg:sidebar-expanded:opacity-100 2xl:opacity-100 duration-200">
@@ -507,31 +601,29 @@ const MapSideBar = ({ sidebarOpen, setSidebarOpen }) => {
                   }`}
                 >
                   <div className="flex items-center">
-                    <svg
+                  <svg
                       xmlns="http://www.w3.org/2000/svg"
-                      class="shrink-0 icon w-6 h-6 icon-tabler icon-tabler-map-2"
+                      class="shrink-0 w-6 h-6 icon icon-tabler icon-tabler-location"
                       width="32"
                       height="32"
                       viewBox="0 0 24 24"
                       stroke-width="1.5"
-                      stroke="#9e9e9e"
+                      stroke="#597e8d"
                       fill="none"
                       stroke-linecap="round"
                       stroke-linejoin="round"
                     >
                       <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                      <line x1="18" y1="6" x2="18" y2="6.01" />
                       <path
-                        d="M18 13l-3.5 -5a4 4 0 1 1 7 0l-3.5 5"
+                        stroke="none"
                         className={`fill-current ${
-                          pathname.includes("pilots")
-                            ? "text-indigo-500"
-                            : "text-slate-600"
+                          pathname === "/pilots" ||
+                          pathname.includes("projects")
+                            ? "text-secondary-light"
+                            : "text-slate-500"
                         }`}
+                        d="M21 3l-6.5 18a0.55 .55 0 0 1 -1 0l-3.5 -7l-7 -3.5a0.55 .55 0 0 1 0 -1l18 -6.5"
                       />
-                      <polyline points="10.5 4.75 9 4 3 7 3 20 9 17 15 20 21 17 21 15" />
-                      <line x1="9" y1="4" x2="9" y2="17" />
-                      <line x1="15" y1="15" x2="15" y2="20" />
                     </svg>
 
                     <span className="text-sm font-medium ml-3 lg:opacity-100 lg:sidebar-expanded:opacity-100 2xl:opacity-100 duration-200">
@@ -558,7 +650,7 @@ const MapSideBar = ({ sidebarOpen, setSidebarOpen }) => {
                   }`}
                 >
                   <div className="flex items-center">
-                    <svg
+                  <svg
                       xmlns="http://www.w3.org/2000/svg"
                       class="shrink-0 icon icon-tabler icon-tabler-sort-ascending-2"
                       width="32"
@@ -571,10 +663,50 @@ const MapSideBar = ({ sidebarOpen, setSidebarOpen }) => {
                       stroke-linejoin="round"
                     >
                       <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                      <path d="M14 9l3 -3l3 3" />
-                      <rect x="5" y="5" width="5" height="5" rx=".5" />
-                      <rect x="5" y="14" width="5" height="5" rx=".5" />
-                      <path d="M17 6v12" />
+                      <path
+                        className={`stroke-current ${
+                          pathname === "/appsPage" ||
+                          pathname.includes("projects")
+                            ? "text-secondary-light"
+                            : "text-slate-500"
+                        }`}
+                        d="M14 9l3 -3l3 3"
+                      />
+                      <rect
+                        className={`stroke-current ${
+                          pathname === "/appsPage" ||
+                          pathname.includes("projects")
+                            ? "text-secondary-light"
+                            : "text-slate-500"
+                        }`}
+                        x="5"
+                        y="5"
+                        width="5"
+                        height="5"
+                        rx=".5"
+                      />
+                      <rect
+                        className={`stroke-current ${
+                          pathname === "/appsPage" ||
+                          pathname.includes("projects")
+                            ? "text-secondary-light"
+                            : "text-slate-500"
+                        }`}
+                        x="5"
+                        y="14"
+                        width="5"
+                        height="5"
+                        rx=".5"
+                      />
+                      <path
+                        className={`stroke-current ${
+                          pathname === "/appsPage" ||
+                          pathname.includes("projects")
+                            ? "text-secondary-light"
+                            : "text-slate-500"
+                        }`}
+                        d="M17 6v12"
+                      />
                     </svg>
 
                     <span className="text-sm font-medium ml-3 lg:opacity-100 lg:sidebar-expanded:opacity-100 2xl:opacity-100 duration-200">
@@ -601,31 +733,97 @@ const MapSideBar = ({ sidebarOpen, setSidebarOpen }) => {
                   }`}
                 >
                   <div className="flex items-center">
-                    <svg
+                  <svg
                       xmlns="http://www.w3.org/2000/svg"
-                      class="icon w-6 shrink-0 h-6 icon-tabler icon-tabler-map-2"
+                      class="icon shrink-0 w-6 h-6 icon-tabler icon-tabler-building-skyscraper"
                       width="32"
                       height="32"
                       viewBox="0 0 24 24"
                       stroke-width="1.5"
-                      stroke="#9e9e9e"
+                      stroke="#597e8d"
                       fill="none"
                       stroke-linecap="round"
                       stroke-linejoin="round"
                     >
                       <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                      <line x1="18" y1="6" x2="18" y2="6.01" />
-                      <path
-                        d="M18 13l-3.5 -5a4 4 0 1 1 7 0l-3.5 5"
-                        className={`fill-current ${
-                          pathname.includes("organization")
-                            ? "text-indigo-500"
-                            : "text-slate-600"
+                      <line
+                        className={`stroke-current ${
+                          pathname === "/organization" ||
+                          pathname.includes("projects")
+                            ? "text-secondary-light"
+                            : "text-slate-500"
                         }`}
+                        x1="3"
+                        y1="21"
+                        x2="21"
+                        y2="21"
                       />
-                      <polyline points="10.5 4.75 9 4 3 7 3 20 9 17 15 20 21 17 21 15" />
-                      <line x1="9" y1="4" x2="9" y2="17" />
-                      <line x1="15" y1="15" x2="15" y2="20" />
+                      <path
+                        className={`stroke-current ${
+                          pathname === "/organization" ||
+                          pathname.includes("projects")
+                            ? "text-secondary-light"
+                            : "text-slate-500"
+                        }`}
+                        d="M5 21v-14l8 -4v18"
+                      />
+                      <path
+                        className={`stroke-current ${
+                          pathname === "/organization" ||
+                          pathname.includes("projects")
+                            ? "text-secondary-light"
+                            : "text-slate-500"
+                        }`}
+                        d="M19 21v-10l-6 -4"
+                      />
+                      <line
+                        className={`stroke-current ${
+                          pathname === "/organization" ||
+                          pathname.includes("projects")
+                            ? "text-secondary-light"
+                            : "text-slate-500"
+                        }`}
+                        x1="9"
+                        y1="9"
+                        x2="9"
+                        y2="9.01"
+                      />
+                      <line
+                        className={`stroke-current ${
+                          pathname === "/organization" ||
+                          pathname.includes("projects")
+                            ? "text-secondary-light"
+                            : "text-slate-500"
+                        }`}
+                        x1="9"
+                        y1="12"
+                        x2="9"
+                        y2="12.01"
+                      />
+                      <line
+                        className={`stroke-current ${
+                          pathname === "/organization" ||
+                          pathname.includes("projects")
+                            ? "text-secondary-light"
+                            : "text-slate-500"
+                        }`}
+                        x1="9"
+                        y1="15"
+                        x2="9"
+                        y2="15.01"
+                      />
+                      <line
+                        className={`stroke-current ${
+                          pathname === "/organization" ||
+                          pathname.includes("projects")
+                            ? "text-secondary-light"
+                            : "text-slate-500"
+                        }`}
+                        x1="9"
+                        y1="18"
+                        x2="9"
+                        y2="18.01"
+                      />
                     </svg>
 
                     <span className="text-sm font-medium ml-3 lg:opacity-100 lg:sidebar-expanded:opacity-100 2xl:opacity-100 duration-200">
@@ -703,7 +901,7 @@ const MapSideBar = ({ sidebarOpen, setSidebarOpen }) => {
                   }`}
                 >
                   <div className="flex items-center">
-                    <svg
+                  <svg
                       xmlns="http://www.w3.org/2000/svg"
                       class="w-6 h-6 shrink-0 icon icon-tabler icon-tabler-settings"
                       width="32"
@@ -716,8 +914,26 @@ const MapSideBar = ({ sidebarOpen, setSidebarOpen }) => {
                       stroke-linejoin="round"
                     >
                       <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                      <path d="M10.325 4.317c.426 -1.756 2.924 -1.756 3.35 0a1.724 1.724 0 0 0 2.573 1.066c1.543 -.94 3.31 .826 2.37 2.37a1.724 1.724 0 0 0 1.065 2.572c1.756 .426 1.756 2.924 0 3.35a1.724 1.724 0 0 0 -1.066 2.573c.94 1.543 -.826 3.31 -2.37 2.37a1.724 1.724 0 0 0 -2.572 1.065c-.426 1.756 -2.924 1.756 -3.35 0a1.724 1.724 0 0 0 -2.573 -1.066c-1.543 .94 -3.31 -.826 -2.37 -2.37a1.724 1.724 0 0 0 -1.065 -2.572c-1.756 -.426 -1.756 -2.924 0 -3.35a1.724 1.724 0 0 0 1.066 -2.573c-.94 -1.543 .826 -3.31 2.37 -2.37c1 .608 2.296 .07 2.572 -1.065z" />
-                      <circle cx="12" cy="12" r="3" />
+                      <path
+                        className={`stroke-current ${
+                          pathname === "/preferences" ||
+                          pathname.includes("projects")
+                            ? "text-secondary-light"
+                            : "text-slate-500"
+                        }`}
+                        d="M10.325 4.317c.426 -1.756 2.924 -1.756 3.35 0a1.724 1.724 0 0 0 2.573 1.066c1.543 -.94 3.31 .826 2.37 2.37a1.724 1.724 0 0 0 1.065 2.572c1.756 .426 1.756 2.924 0 3.35a1.724 1.724 0 0 0 -1.066 2.573c.94 1.543 -.826 3.31 -2.37 2.37a1.724 1.724 0 0 0 -2.572 1.065c-.426 1.756 -2.924 1.756 -3.35 0a1.724 1.724 0 0 0 -2.573 -1.066c-1.543 .94 -3.31 -.826 -2.37 -2.37a1.724 1.724 0 0 0 -1.065 -2.572c-1.756 -.426 -1.756 -2.924 0 -3.35a1.724 1.724 0 0 0 1.066 -2.573c-.94 -1.543 .826 -3.31 2.37 -2.37c1 .608 2.296 .07 2.572 -1.065z"
+                      />
+                      <circle
+                        className={`stroke-current ${
+                          pathname === "/preferences" ||
+                          pathname.includes("projects")
+                            ? "text-secondary-light"
+                            : "text-slate-500"
+                        }`}
+                        cx="12"
+                        cy="12"
+                        r="3"
+                      />
                     </svg>
 
                     <span className="text-sm font-medium ml-3 lg:opacity-100 lg:sidebar-expanded:opacity-100 2xl:opacity-100 duration-200">
@@ -760,7 +976,7 @@ const MapSideBar = ({ sidebarOpen, setSidebarOpen }) => {
                                 className={`fill-current ${
                                   pathname === "/dashboard" ||
                                   pathname.includes("dashboard")
-                                    ? "text-indigo-500"
+                                    ? "text-secondary-light"
                                     : "text-slate-400"
                                 }`}
                                 d="M12 0C5.383 0 0 5.383 0 12s5.383 12 12 12 12-5.383 12-12S18.617 0 12 0z"
@@ -810,7 +1026,7 @@ const MapSideBar = ({ sidebarOpen, setSidebarOpen }) => {
                               className={({ isActive }) =>
                                 "block transition duration-150 truncate " +
                                 (isActive
-                                  ? "text-indigo-500"
+                                  ? "text-secondary-light"
                                   : "text-slate-400 hover:text-slate-200")
                               }
                             >
@@ -826,7 +1042,7 @@ const MapSideBar = ({ sidebarOpen, setSidebarOpen }) => {
                               className={({ isActive }) =>
                                 "block transition duration-150 truncate " +
                                 (isActive
-                                  ? "text-indigo-500"
+                                  ? "text-secondary-light"
                                   : "text-slate-400 hover:text-slate-200")
                               }
                             >
@@ -842,7 +1058,7 @@ const MapSideBar = ({ sidebarOpen, setSidebarOpen }) => {
                               className={({ isActive }) =>
                                 "block transition duration-150 truncate " +
                                 (isActive
-                                  ? "text-indigo-500"
+                                  ? "text-secondary-light"
                                   : "text-slate-400 hover:text-slate-200")
                               }
                             >
@@ -902,7 +1118,7 @@ const MapSideBar = ({ sidebarOpen, setSidebarOpen }) => {
                               <path
                                 className={`fill-current ${
                                   pathname.includes("ecommerce")
-                                    ? "text-indigo-500"
+                                    ? "text-secondary-light"
                                     : "text-slate-600"
                                 }`}
                                 d="M13 15.047V24l10.573-7.181A.999.999 0 0024 16V8l-11 7.047z"
@@ -934,7 +1150,7 @@ const MapSideBar = ({ sidebarOpen, setSidebarOpen }) => {
                               className={({ isActive }) =>
                                 "block transition duration-150 truncate " +
                                 (isActive
-                                  ? "text-indigo-500"
+                                  ? "text-secondary-light"
                                   : "text-slate-400 hover:text-slate-200")
                               }
                             >
@@ -950,7 +1166,7 @@ const MapSideBar = ({ sidebarOpen, setSidebarOpen }) => {
                               className={({ isActive }) =>
                                 "block transition duration-150 truncate " +
                                 (isActive
-                                  ? "text-indigo-500"
+                                  ? "text-secondary-light"
                                   : "text-slate-400 hover:text-slate-200")
                               }
                             >
@@ -966,7 +1182,7 @@ const MapSideBar = ({ sidebarOpen, setSidebarOpen }) => {
                               className={({ isActive }) =>
                                 "block transition duration-150 truncate " +
                                 (isActive
-                                  ? "text-indigo-500"
+                                  ? "text-secondary-light"
                                   : "text-slate-400 hover:text-slate-200")
                               }
                             >
@@ -982,7 +1198,7 @@ const MapSideBar = ({ sidebarOpen, setSidebarOpen }) => {
                               className={({ isActive }) =>
                                 "block transition duration-150 truncate " +
                                 (isActive
-                                  ? "text-indigo-500"
+                                  ? "text-secondary-light"
                                   : "text-slate-400 hover:text-slate-200")
                               }
                             >
@@ -998,7 +1214,7 @@ const MapSideBar = ({ sidebarOpen, setSidebarOpen }) => {
                               className={({ isActive }) =>
                                 "block transition duration-150 truncate " +
                                 (isActive
-                                  ? "text-indigo-500"
+                                  ? "text-secondary-light"
                                   : "text-slate-400 hover:text-slate-200")
                               }
                             >
@@ -1014,7 +1230,7 @@ const MapSideBar = ({ sidebarOpen, setSidebarOpen }) => {
                               className={({ isActive }) =>
                                 "block transition duration-150 truncate " +
                                 (isActive
-                                  ? "text-indigo-500"
+                                  ? "text-secondary-light"
                                   : "text-slate-400 hover:text-slate-200")
                               }
                             >
@@ -1030,7 +1246,7 @@ const MapSideBar = ({ sidebarOpen, setSidebarOpen }) => {
                               className={({ isActive }) =>
                                 "block transition duration-150 truncate " +
                                 (isActive
-                                  ? "text-indigo-500"
+                                  ? "text-secondary-light"
                                   : "text-slate-400 hover:text-slate-200")
                               }
                             >
@@ -1046,7 +1262,7 @@ const MapSideBar = ({ sidebarOpen, setSidebarOpen }) => {
                               className={({ isActive }) =>
                                 "block transition duration-150 truncate " +
                                 (isActive
-                                  ? "text-indigo-500"
+                                  ? "text-secondary-light"
                                   : "text-slate-400 hover:text-slate-200")
                               }
                             >
@@ -1062,7 +1278,7 @@ const MapSideBar = ({ sidebarOpen, setSidebarOpen }) => {
                               className={({ isActive }) =>
                                 "block transition duration-150 truncate " +
                                 (isActive
-                                  ? "text-indigo-500"
+                                  ? "text-secondary-light"
                                   : "text-slate-400 hover:text-slate-200")
                               }
                             >
@@ -1078,7 +1294,7 @@ const MapSideBar = ({ sidebarOpen, setSidebarOpen }) => {
                               className={({ isActive }) =>
                                 "block transition duration-150 truncate " +
                                 (isActive
-                                  ? "text-indigo-500"
+                                  ? "text-secondary-light"
                                   : "text-slate-400 hover:text-slate-200")
                               }
                             >
@@ -1122,7 +1338,7 @@ const MapSideBar = ({ sidebarOpen, setSidebarOpen }) => {
                               <path
                                 className={`fill-current ${
                                   pathname.includes("community")
-                                    ? "text-indigo-500"
+                                    ? "text-secondary-light"
                                     : "text-slate-600"
                                 }`}
                                 d="M18.974 8H22a2 2 0 012 2v6h-2v5a1 1 0 01-1 1h-2a1 1 0 01-1-1v-5h-2v-6a2 2 0 012-2h.974zM20 7a2 2 0 11-.001-3.999A2 2 0 0120 7zM2.974 8H6a2 2 0 012 2v6H6v5a1 1 0 01-1 1H3a1 1 0 01-1-1v-5H0v-6a2 2 0 012-2h.974zM4 7a2 2 0 11-.001-3.999A2 2 0 014 7z"
@@ -1162,7 +1378,7 @@ const MapSideBar = ({ sidebarOpen, setSidebarOpen }) => {
                               className={({ isActive }) =>
                                 "block transition duration-150 truncate " +
                                 (isActive
-                                  ? "text-indigo-500"
+                                  ? "text-secondary-light"
                                   : "text-slate-400 hover:text-slate-200")
                               }
                             >
@@ -1178,7 +1394,7 @@ const MapSideBar = ({ sidebarOpen, setSidebarOpen }) => {
                               className={({ isActive }) =>
                                 "block transition duration-150 truncate " +
                                 (isActive
-                                  ? "text-indigo-500"
+                                  ? "text-secondary-light"
                                   : "text-slate-400 hover:text-slate-200")
                               }
                             >
@@ -1194,7 +1410,7 @@ const MapSideBar = ({ sidebarOpen, setSidebarOpen }) => {
                               className={({ isActive }) =>
                                 "block transition duration-150 truncate " +
                                 (isActive
-                                  ? "text-indigo-500"
+                                  ? "text-secondary-light"
                                   : "text-slate-400 hover:text-slate-200")
                               }
                             >
@@ -1210,7 +1426,7 @@ const MapSideBar = ({ sidebarOpen, setSidebarOpen }) => {
                               className={({ isActive }) =>
                                 "block transition duration-150 truncate " +
                                 (isActive
-                                  ? "text-indigo-500"
+                                  ? "text-secondary-light"
                                   : "text-slate-400 hover:text-slate-200")
                               }
                             >
@@ -1226,7 +1442,7 @@ const MapSideBar = ({ sidebarOpen, setSidebarOpen }) => {
                               className={({ isActive }) =>
                                 "block transition duration-150 truncate " +
                                 (isActive
-                                  ? "text-indigo-500"
+                                  ? "text-secondary-light"
                                   : "text-slate-400 hover:text-slate-200")
                               }
                             >
@@ -1242,7 +1458,7 @@ const MapSideBar = ({ sidebarOpen, setSidebarOpen }) => {
                               className={({ isActive }) =>
                                 "block transition duration-150 truncate " +
                                 (isActive
-                                  ? "text-indigo-500"
+                                  ? "text-secondary-light"
                                   : "text-slate-400 hover:text-slate-200")
                               }
                             >
@@ -1258,7 +1474,7 @@ const MapSideBar = ({ sidebarOpen, setSidebarOpen }) => {
                               className={({ isActive }) =>
                                 "block transition duration-150 truncate " +
                                 (isActive
-                                  ? "text-indigo-500"
+                                  ? "text-secondary-light"
                                   : "text-slate-400 hover:text-slate-200")
                               }
                             >
@@ -1274,7 +1490,7 @@ const MapSideBar = ({ sidebarOpen, setSidebarOpen }) => {
                               className={({ isActive }) =>
                                 "block transition duration-150 truncate " +
                                 (isActive
-                                  ? "text-indigo-500"
+                                  ? "text-secondary-light"
                                   : "text-slate-400 hover:text-slate-200")
                               }
                             >
@@ -1324,7 +1540,7 @@ const MapSideBar = ({ sidebarOpen, setSidebarOpen }) => {
                               <path
                                 className={`fill-current ${
                                   pathname.includes("finance")
-                                    ? "text-indigo-500"
+                                    ? "text-secondary-light"
                                     : "text-slate-700"
                                 }`}
                                 d="M18.007 13c-.474 2.833-2.919 5-5.864 5a5.888 5.888 0 0 1-3.694-1.304L4 20.731C6.131 22.752 8.992 24 12.143 24c6.232 0 11.35-4.851 11.857-11h-5.993Z"
@@ -1364,7 +1580,7 @@ const MapSideBar = ({ sidebarOpen, setSidebarOpen }) => {
                               className={({ isActive }) =>
                                 "block transition duration-150 truncate " +
                                 (isActive
-                                  ? "text-indigo-500"
+                                  ? "text-secondary-light"
                                   : "text-slate-400 hover:text-slate-200")
                               }
                             >
@@ -1380,7 +1596,7 @@ const MapSideBar = ({ sidebarOpen, setSidebarOpen }) => {
                               className={({ isActive }) =>
                                 "block transition duration-150 truncate " +
                                 (isActive
-                                  ? "text-indigo-500"
+                                  ? "text-secondary-light"
                                   : "text-slate-400 hover:text-slate-200")
                               }
                             >
@@ -1396,7 +1612,7 @@ const MapSideBar = ({ sidebarOpen, setSidebarOpen }) => {
                               className={({ isActive }) =>
                                 "block transition duration-150 truncate " +
                                 (isActive
-                                  ? "text-indigo-500"
+                                  ? "text-secondary-light"
                                   : "text-slate-400 hover:text-slate-200")
                               }
                             >
@@ -1446,7 +1662,7 @@ const MapSideBar = ({ sidebarOpen, setSidebarOpen }) => {
                               <path
                                 className={`fill-current ${
                                   pathname.includes("job")
-                                    ? "text-indigo-500"
+                                    ? "text-secondary-light"
                                     : "text-slate-600"
                                 }`}
                                 d="M10.034 13.997a11.011 11.011 0 0 1-2.551-3.862L4.595 13.02a2.513 2.513 0 0 0-.4 2.645 6.668 6.668 0 0 0 1.64 2.532 5.525 5.525 0 0 0 3.643 1.824 2.1 2.1 0 0 0 1.534-.587l2.883-2.882a11.156 11.156 0 0 1-3.861-2.556Z"
@@ -1486,7 +1702,7 @@ const MapSideBar = ({ sidebarOpen, setSidebarOpen }) => {
                               className={({ isActive }) =>
                                 "block transition duration-150 truncate " +
                                 (isActive
-                                  ? "text-indigo-500"
+                                  ? "text-secondary-light"
                                   : "text-slate-400 hover:text-slate-200")
                               }
                             >
@@ -1502,7 +1718,7 @@ const MapSideBar = ({ sidebarOpen, setSidebarOpen }) => {
                               className={({ isActive }) =>
                                 "block transition duration-150 truncate " +
                                 (isActive
-                                  ? "text-indigo-500"
+                                  ? "text-secondary-light"
                                   : "text-slate-400 hover:text-slate-200")
                               }
                             >
@@ -1518,7 +1734,7 @@ const MapSideBar = ({ sidebarOpen, setSidebarOpen }) => {
                               className={({ isActive }) =>
                                 "block transition duration-150 truncate " +
                                 (isActive
-                                  ? "text-indigo-500"
+                                  ? "text-secondary-light"
                                   : "text-slate-400 hover:text-slate-200")
                               }
                             >
@@ -1560,7 +1776,7 @@ const MapSideBar = ({ sidebarOpen, setSidebarOpen }) => {
                               <path
                                 className={`fill-current ${
                                   pathname.includes("tasks")
-                                    ? "text-indigo-500"
+                                    ? "text-secondary-light"
                                     : "text-slate-600"
                                 }`}
                                 d="M8 1v2H3v19h18V3h-5V1h7v23H1V1z"
@@ -1568,7 +1784,7 @@ const MapSideBar = ({ sidebarOpen, setSidebarOpen }) => {
                               <path
                                 className={`fill-current ${
                                   pathname.includes("tasks")
-                                    ? "text-indigo-500"
+                                    ? "text-secondary-light"
                                     : "text-slate-600"
                                 }`}
                                 d="M1 1h22v23H1z"
@@ -1608,7 +1824,7 @@ const MapSideBar = ({ sidebarOpen, setSidebarOpen }) => {
                               className={({ isActive }) =>
                                 "block transition duration-150 truncate " +
                                 (isActive
-                                  ? "text-indigo-500"
+                                  ? "text-secondary-light"
                                   : "text-slate-400 hover:text-slate-200")
                               }
                             >
@@ -1624,7 +1840,7 @@ const MapSideBar = ({ sidebarOpen, setSidebarOpen }) => {
                               className={({ isActive }) =>
                                 "block transition duration-150 truncate " +
                                 (isActive
-                                  ? "text-indigo-500"
+                                  ? "text-secondary-light"
                                   : "text-slate-400 hover:text-slate-200")
                               }
                             >
@@ -1660,7 +1876,7 @@ const MapSideBar = ({ sidebarOpen, setSidebarOpen }) => {
                         <path
                           className={`fill-current ${
                             pathname.includes("messages")
-                              ? "text-indigo-500"
+                              ? "text-secondary-light"
                               : "text-slate-600"
                           }`}
                           d="M14.5 7c4.695 0 8.5 3.184 8.5 7.111 0 1.597-.638 3.067-1.7 4.253V23l-4.108-2.148a10 10 0 01-2.692.37c-4.695 0-8.5-3.184-8.5-7.11C6 10.183 9.805 7 14.5 7z"
@@ -1680,7 +1896,7 @@ const MapSideBar = ({ sidebarOpen, setSidebarOpen }) => {
                     </div>
                     {/* Badge */}
                     <div className="flex flex-shrink-0 ml-2">
-                      <span className="inline-flex items-center justify-center h-5 text-xs font-medium text-white bg-indigo-500 px-2 rounded">
+                      <span className="inline-flex items-center justify-center h-5 text-xs font-medium text-white bg-secondary px-2 rounded">
                         4
                       </span>
                     </div>
@@ -1707,7 +1923,7 @@ const MapSideBar = ({ sidebarOpen, setSidebarOpen }) => {
                       <path
                         className={`fill-current ${
                           pathname.includes("inbox")
-                            ? "text-indigo-500"
+                            ? "text-secondary-light"
                             : "text-slate-600"
                         }`}
                         d="M16 13v4H8v-4H0l3-9h18l3 9h-8Z"
@@ -1747,7 +1963,7 @@ const MapSideBar = ({ sidebarOpen, setSidebarOpen }) => {
                       <path
                         className={`fill-current ${
                           pathname.includes("calendar")
-                            ? "text-indigo-500"
+                            ? "text-secondary-light"
                             : "text-slate-600"
                         }`}
                         d="M1 3h22v20H1z"
@@ -1787,7 +2003,7 @@ const MapSideBar = ({ sidebarOpen, setSidebarOpen }) => {
                       <path
                         className={`fill-current ${
                           pathname.includes("campaigns")
-                            ? "text-indigo-500"
+                            ? "text-secondary-light"
                             : "text-slate-600"
                         }`}
                         d="M20 7a.75.75 0 01-.75-.75 1.5 1.5 0 00-1.5-1.5.75.75 0 110-1.5 1.5 1.5 0 001.5-1.5.75.75 0 111.5 0 1.5 1.5 0 001.5 1.5.75.75 0 110 1.5 1.5 1.5 0 00-1.5 1.5A.75.75 0 0120 7zM4 23a.75.75 0 01-.75-.75 1.5 1.5 0 00-1.5-1.5.75.75 0 110-1.5 1.5 1.5 0 001.5-1.5.75.75 0 111.5 0 1.5 1.5 0 001.5 1.5.75.75 0 110 1.5 1.5 1.5 0 00-1.5 1.5A.75.75 0 014 23z"
@@ -1834,7 +2050,7 @@ const MapSideBar = ({ sidebarOpen, setSidebarOpen }) => {
                               <path
                                 className={`fill-current ${
                                   pathname.includes("settings")
-                                    ? "text-indigo-500"
+                                    ? "text-secondary-light"
                                     : "text-slate-600"
                                 }`}
                                 d="M19.714 14.7l-7.007 7.007-1.414-1.414 7.007-7.007c-.195-.4-.298-.84-.3-1.286a3 3 0 113 3 2.969 2.969 0 01-1.286-.3z"
@@ -1850,7 +2066,7 @@ const MapSideBar = ({ sidebarOpen, setSidebarOpen }) => {
                               <path
                                 className={`fill-current ${
                                   pathname.includes("settings")
-                                    ? "text-indigo-500"
+                                    ? "text-secondary-light"
                                     : "text-slate-600"
                                 }`}
                                 d="M5.7 10.714c.195.4.298.84.3 1.286a3 3 0 11-3-3c.446.002.885.105 1.286.3l7.007-7.007 1.414 1.414L5.7 10.714z"
@@ -1890,7 +2106,7 @@ const MapSideBar = ({ sidebarOpen, setSidebarOpen }) => {
                               className={({ isActive }) =>
                                 "block transition duration-150 truncate " +
                                 (isActive
-                                  ? "text-indigo-500"
+                                  ? "text-secondary-light"
                                   : "text-slate-400 hover:text-slate-200")
                               }
                             >
@@ -1906,7 +2122,7 @@ const MapSideBar = ({ sidebarOpen, setSidebarOpen }) => {
                               className={({ isActive }) =>
                                 "block transition duration-150 truncate " +
                                 (isActive
-                                  ? "text-indigo-500"
+                                  ? "text-secondary-light"
                                   : "text-slate-400 hover:text-slate-200")
                               }
                             >
@@ -1922,7 +2138,7 @@ const MapSideBar = ({ sidebarOpen, setSidebarOpen }) => {
                               className={({ isActive }) =>
                                 "block transition duration-150 truncate " +
                                 (isActive
-                                  ? "text-indigo-500"
+                                  ? "text-secondary-light"
                                   : "text-slate-400 hover:text-slate-200")
                               }
                             >
@@ -1938,7 +2154,7 @@ const MapSideBar = ({ sidebarOpen, setSidebarOpen }) => {
                               className={({ isActive }) =>
                                 "block transition duration-150 truncate " +
                                 (isActive
-                                  ? "text-indigo-500"
+                                  ? "text-secondary-light"
                                   : "text-slate-400 hover:text-slate-200")
                               }
                             >
@@ -1954,7 +2170,7 @@ const MapSideBar = ({ sidebarOpen, setSidebarOpen }) => {
                               className={({ isActive }) =>
                                 "block transition duration-150 truncate " +
                                 (isActive
-                                  ? "text-indigo-500"
+                                  ? "text-secondary-light"
                                   : "text-slate-400 hover:text-slate-200")
                               }
                             >
@@ -1970,7 +2186,7 @@ const MapSideBar = ({ sidebarOpen, setSidebarOpen }) => {
                               className={({ isActive }) =>
                                 "block transition duration-150 truncate " +
                                 (isActive
-                                  ? "text-indigo-500"
+                                  ? "text-secondary-light"
                                   : "text-slate-400 hover:text-slate-200")
                               }
                             >
@@ -2022,7 +2238,7 @@ const MapSideBar = ({ sidebarOpen, setSidebarOpen }) => {
                               <circle
                                 className={`fill-current ${
                                   pathname.includes("utility")
-                                    ? "text-indigo-500"
+                                    ? "text-secondary-light"
                                     : "text-slate-600"
                                 }`}
                                 cx="5.5"
@@ -2032,7 +2248,7 @@ const MapSideBar = ({ sidebarOpen, setSidebarOpen }) => {
                               <circle
                                 className={`fill-current ${
                                   pathname.includes("utility")
-                                    ? "text-indigo-500"
+                                    ? "text-secondary-light"
                                     : "text-slate-600"
                                 }`}
                                 cx="18.5"
@@ -2076,7 +2292,7 @@ const MapSideBar = ({ sidebarOpen, setSidebarOpen }) => {
                               className={({ isActive }) =>
                                 "block transition duration-150 truncate " +
                                 (isActive
-                                  ? "text-indigo-500"
+                                  ? "text-secondary-light"
                                   : "text-slate-400 hover:text-slate-200")
                               }
                             >
@@ -2092,7 +2308,7 @@ const MapSideBar = ({ sidebarOpen, setSidebarOpen }) => {
                               className={({ isActive }) =>
                                 "block transition duration-150 truncate " +
                                 (isActive
-                                  ? "text-indigo-500"
+                                  ? "text-secondary-light"
                                   : "text-slate-400 hover:text-slate-200")
                               }
                             >
@@ -2108,7 +2324,7 @@ const MapSideBar = ({ sidebarOpen, setSidebarOpen }) => {
                               className={({ isActive }) =>
                                 "block transition duration-150 truncate " +
                                 (isActive
-                                  ? "text-indigo-500"
+                                  ? "text-secondary-light"
                                   : "text-slate-400 hover:text-slate-200")
                               }
                             >
@@ -2124,7 +2340,7 @@ const MapSideBar = ({ sidebarOpen, setSidebarOpen }) => {
                               className={({ isActive }) =>
                                 "block transition duration-150 truncate " +
                                 (isActive
-                                  ? "text-indigo-500"
+                                  ? "text-secondary-light"
                                   : "text-slate-400 hover:text-slate-200")
                               }
                             >
@@ -2140,7 +2356,7 @@ const MapSideBar = ({ sidebarOpen, setSidebarOpen }) => {
                               className={({ isActive }) =>
                                 "block transition duration-150 truncate " +
                                 (isActive
-                                  ? "text-indigo-500"
+                                  ? "text-secondary-light"
                                   : "text-slate-400 hover:text-slate-200")
                               }
                             >
@@ -2156,7 +2372,7 @@ const MapSideBar = ({ sidebarOpen, setSidebarOpen }) => {
                               className={({ isActive }) =>
                                 "block transition duration-150 truncate " +
                                 (isActive
-                                  ? "text-indigo-500"
+                                  ? "text-secondary-light"
                                   : "text-slate-400 hover:text-slate-200")
                               }
                             >
@@ -2397,7 +2613,7 @@ const MapSideBar = ({ sidebarOpen, setSidebarOpen }) => {
                               <circle
                                 className={`fill-current ${
                                   pathname.includes("component")
-                                    ? "text-indigo-500"
+                                    ? "text-secondary-light"
                                     : "text-slate-600"
                                 }`}
                                 cx="16"
@@ -2441,7 +2657,7 @@ const MapSideBar = ({ sidebarOpen, setSidebarOpen }) => {
                               className={({ isActive }) =>
                                 "block transition duration-150 truncate " +
                                 (isActive
-                                  ? "text-indigo-500"
+                                  ? "text-secondary-light"
                                   : "text-slate-400 hover:text-slate-200")
                               }
                             >
@@ -2457,7 +2673,7 @@ const MapSideBar = ({ sidebarOpen, setSidebarOpen }) => {
                               className={({ isActive }) =>
                                 "block transition duration-150 truncate " +
                                 (isActive
-                                  ? "text-indigo-500"
+                                  ? "text-secondary-light"
                                   : "text-slate-400 hover:text-slate-200")
                               }
                             >
@@ -2473,7 +2689,7 @@ const MapSideBar = ({ sidebarOpen, setSidebarOpen }) => {
                               className={({ isActive }) =>
                                 "block transition duration-150 truncate " +
                                 (isActive
-                                  ? "text-indigo-500"
+                                  ? "text-secondary-light"
                                   : "text-slate-400 hover:text-slate-200")
                               }
                             >
@@ -2489,7 +2705,7 @@ const MapSideBar = ({ sidebarOpen, setSidebarOpen }) => {
                               className={({ isActive }) =>
                                 "block transition duration-150 truncate " +
                                 (isActive
-                                  ? "text-indigo-500"
+                                  ? "text-secondary-light"
                                   : "text-slate-400 hover:text-slate-200")
                               }
                             >
@@ -2505,7 +2721,7 @@ const MapSideBar = ({ sidebarOpen, setSidebarOpen }) => {
                               className={({ isActive }) =>
                                 "block transition duration-150 truncate " +
                                 (isActive
-                                  ? "text-indigo-500"
+                                  ? "text-secondary-light"
                                   : "text-slate-400 hover:text-slate-200")
                               }
                             >
@@ -2521,7 +2737,7 @@ const MapSideBar = ({ sidebarOpen, setSidebarOpen }) => {
                               className={({ isActive }) =>
                                 "block transition duration-150 truncate " +
                                 (isActive
-                                  ? "text-indigo-500"
+                                  ? "text-secondary-light"
                                   : "text-slate-400 hover:text-slate-200")
                               }
                             >
@@ -2537,7 +2753,7 @@ const MapSideBar = ({ sidebarOpen, setSidebarOpen }) => {
                               className={({ isActive }) =>
                                 "block transition duration-150 truncate " +
                                 (isActive
-                                  ? "text-indigo-500"
+                                  ? "text-secondary-light"
                                   : "text-slate-400 hover:text-slate-200")
                               }
                             >
@@ -2553,7 +2769,7 @@ const MapSideBar = ({ sidebarOpen, setSidebarOpen }) => {
                               className={({ isActive }) =>
                                 "block transition duration-150 truncate " +
                                 (isActive
-                                  ? "text-indigo-500"
+                                  ? "text-secondary-light"
                                   : "text-slate-400 hover:text-slate-200")
                               }
                             >
@@ -2569,7 +2785,7 @@ const MapSideBar = ({ sidebarOpen, setSidebarOpen }) => {
                               className={({ isActive }) =>
                                 "block transition duration-150 truncate " +
                                 (isActive
-                                  ? "text-indigo-500"
+                                  ? "text-secondary-light"
                                   : "text-slate-400 hover:text-slate-200")
                               }
                             >
@@ -2585,7 +2801,7 @@ const MapSideBar = ({ sidebarOpen, setSidebarOpen }) => {
                               className={({ isActive }) =>
                                 "block transition duration-150 truncate " +
                                 (isActive
-                                  ? "text-indigo-500"
+                                  ? "text-secondary-light"
                                   : "text-slate-400 hover:text-slate-200")
                               }
                             >
@@ -2601,7 +2817,7 @@ const MapSideBar = ({ sidebarOpen, setSidebarOpen }) => {
                               className={({ isActive }) =>
                                 "block transition duration-150 truncate " +
                                 (isActive
-                                  ? "text-indigo-500"
+                                  ? "text-secondary-light"
                                   : "text-slate-400 hover:text-slate-200")
                               }
                             >
@@ -2617,7 +2833,7 @@ const MapSideBar = ({ sidebarOpen, setSidebarOpen }) => {
                               className={({ isActive }) =>
                                 "block transition duration-150 truncate " +
                                 (isActive
-                                  ? "text-indigo-500"
+                                  ? "text-secondary-light"
                                   : "text-slate-400 hover:text-slate-200")
                               }
                             >
@@ -2633,7 +2849,7 @@ const MapSideBar = ({ sidebarOpen, setSidebarOpen }) => {
                               className={({ isActive }) =>
                                 "block transition duration-150 truncate " +
                                 (isActive
-                                  ? "text-indigo-500"
+                                  ? "text-secondary-light"
                                   : "text-slate-400 hover:text-slate-200")
                               }
                             >

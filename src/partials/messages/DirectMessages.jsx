@@ -23,7 +23,7 @@ function DirectMessages({
               </div>
             </div>
             <div className="flex items-center ml-2">
-              <div className="text-xs inline-flex font-medium bg-indigo-400 text-white rounded-full text-center leading-5 px-2">2</div>
+              <div className="text-xs inline-flex font-medium bg-secondary-100 text-white rounded-full text-center leading-5 px-2">2</div>
             </div>
           </button>
         </li>
@@ -36,7 +36,7 @@ function DirectMessages({
               </div>
             </div>
             <div className="flex items-center ml-2">
-              <div className="text-xs inline-flex font-medium bg-indigo-400 text-white rounded-full text-center leading-5 px-2">4</div>
+              <div className="text-xs inline-flex font-medium bg-secondary-100 text-white rounded-full text-center leading-5 px-2">4</div>
             </div>
           </button>
         </li>

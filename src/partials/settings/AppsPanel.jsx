@@ -14,7 +14,7 @@ function AppsPanel() {
           <div className="mb-4 border-b border-slate-200">
             <ul className="text-sm font-medium flex flex-nowrap -mx-4 sm:-mx-6 lg:-mx-8 overflow-x-scroll no-scrollbar">
               <li className="pb-3 mr-6 last:mr-0 first:pl-4 sm:first:pl-6 lg:first:pl-8 last:pr-4 sm:last:pr-6 lg:last:pr-8">
-                <a className="text-indigo-500 whitespace-nowrap" href="#0">View All</a>
+                <a className="text-secondary-light whitespace-nowrap" href="#0">View All</a>
               </li>
               <li className="pb-3 mr-6 last:mr-0 first:pl-4 sm:first:pl-6 lg:first:pl-8 last:pr-4 sm:last:pr-6 lg:last:pr-8">
                 <a className="text-slate-500 hover:text-slate-600 whitespace-nowrap" href="#0">Utility</a>
@@ -318,7 +318,7 @@ function AppsPanel() {
                     {/* Left side */}
                     <div className="text-sm text-slate-500 italic">400+ Apps</div>
                     {/* Right side */}
-                    <a className="text-sm font-medium text-indigo-500 hover:text-indigo-600" href="#0">Explore -&gt;</a>
+                    <a className="text-sm font-medium text-secondary-light hover:text-secondary-dark" href="#0">Explore -&gt;</a>
                   </div>
                 </footer>
               </div>
@@ -338,7 +338,7 @@ function AppsPanel() {
                     {/* Left side */}
                     <div className="text-sm text-slate-500 italic">320+ Apps</div>
                     {/* Right side */}
-                    <a className="text-sm font-medium text-indigo-500 hover:text-indigo-600" href="#0">Explore -&gt;</a>
+                    <a className="text-sm font-medium text-secondary-light hover:text-secondary-dark" href="#0">Explore -&gt;</a>
                   </div>
                 </footer>
               </div>
@@ -358,7 +358,7 @@ function AppsPanel() {
                     {/* Left side */}
                     <div className="text-sm text-slate-500 italic">270+ Apps</div>
                     {/* Right side */}
-                    <a className="text-sm font-medium text-indigo-500 hover:text-indigo-600" href="#0">Explore -&gt;</a>
+                    <a className="text-sm font-medium text-secondary-light hover:text-secondary-dark" href="#0">Explore -&gt;</a>
                   </div>
                 </footer>
               </div>

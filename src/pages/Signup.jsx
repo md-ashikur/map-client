@@ -72,13 +72,13 @@ function Signup() {
                       <span className="text-sm ml-2">Email me about product news.</span>
                     </label>
                   </div>
-                  <Link className="btn bg-indigo-500 hover:bg-indigo-600 text-white ml-3 whitespace-nowrap" to="/">Sign Up</Link>
+                  <Link className="btn bg-secondary hover:bg-secondary-dark text-white ml-3 whitespace-nowrap" to="/">Sign Up</Link>
                 </div>
               </form>
               {/* Footer */}
               <div className="pt-5 mt-6 border-t border-slate-200">
                 <div className="text-sm">
-                  Have an account? <Link className="font-medium text-indigo-500 hover:text-indigo-600" to="/signin">Sign In</Link>
+                  Have an account? <Link className="font-medium text-secondary-light hover:text-secondary-dark" to="/signin">Sign In</Link>
                 </div>
               </div>
             </div>

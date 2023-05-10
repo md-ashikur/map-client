@@ -78,7 +78,7 @@ const ProjectViewTabs = () => {
           </div>
         </div>
         <div className="tab-content">
-          <div className={activeTab === 0 ? "active" : ""}>
+          <div className={activeTab === 0 ? "active z-10" : ""}>
             <ProjectsList/>
           </div>
           <div className={activeTab === 1 ? "active" : ""}>

@@ -5,6 +5,7 @@ const QuickAccess = () => {
   return (
     <React.Fragment>
       {/* Card 1 */}
+      <a href="https://www.google.com/">
       <div className="relative basis-1/2 max-w-[170px] lg:max-w-[200px] h-52 bg-white shadow-lg rounded-lg border border-slate-200 overflow-hidden">
         {/* Image */}
         <img
@@ -26,17 +27,19 @@ const QuickAccess = () => {
           </h3>
           <p className="text-xs text-white">April 22, 2023</p>
           <a
-            className="text-sm font-medium text-indigo-400 hover:text-indigo-300"
-            href="#0"
+            className="text-sm font-medium text-secondary-light hover:text-secondary"
+            href="https://www.google.com/"
           >
             Explore -&gt;
           </a>
         </div>
       </div>
+      </a>
 
 
       {/* Card 2 */}
-      <div className="relative basis-1/2 max-w-[170px] lg:max-w-[200px]  h-52 bg-white shadow-lg rounded-lg border border-slate-200 overflow-hidden">
+     <a href="https://www.google.com/">
+     <div className="relative basis-1/2 max-w-[170px] lg:max-w-[200px]  h-52 bg-white shadow-lg rounded-lg border border-slate-200 overflow-hidden">
         {/* Image */}
         <img
           className="absolute w-full h-full object-cover"
@@ -57,17 +60,19 @@ const QuickAccess = () => {
           </h3>
           <p className="text-xs text-white">April 22, 2023</p>
           <a
-            className="text-sm font-medium text-indigo-400 hover:text-indigo-300"
-            href="#0"
+            className="text-sm font-medium text-secondary-light hover:text-secondary"
+            href="https://www.google.com/"
           >
             Explore -&gt;
           </a>
         </div>
       </div>
+     </a>
 
       
       {/* Card 3 */}
-      <div className="relative basis-1/2 max-w-[170px] lg:max-w-[200px]  h-52 bg-white shadow-lg rounded-lg border border-slate-200 overflow-hidden">
+     <a href="https://www.google.com/">
+     <div className="relative basis-1/2 max-w-[170px] lg:max-w-[200px]  h-52 bg-white shadow-lg rounded-lg border border-slate-200 overflow-hidden">
         {/* Image */}
         <img
           className="absolute w-full h-full object-cover"
@@ -88,13 +93,14 @@ const QuickAccess = () => {
           </h3>
           <p className="text-xs text-white">April 22, 2023</p>
           <a
-            className="text-sm font-medium text-indigo-400 hover:text-indigo-300"
-            href="#0"
+            className="text-sm font-medium text-secondary-light hover:text-secondary"
+            href="https://www.google.com/"
           >
             Explore -&gt;
           </a>
         </div>
       </div>
+     </a>
      
     </React.Fragment>
   );

@@ -34,7 +34,7 @@ const Annotating = () => {
                               className={({ isActive }) =>
                                 "block transition duration-150 truncate " +
                                 (isActive
-                                  ? "text-indigo-500"
+                                  ? "text-secondary-light"
                                   : "text-slate-400 hover:text-slate-200")
                               }
                             >
@@ -50,7 +50,7 @@ const Annotating = () => {
                               className={({ isActive }) =>
                                 "block transition duration-150 truncate " +
                                 (isActive
-                                  ? "text-indigo-500"
+                                  ? "text-secondary-light"
                                   : "text-slate-400 hover:text-slate-200")
                               }
                             >
@@ -66,7 +66,7 @@ const Annotating = () => {
                               className={({ isActive }) =>
                                 "block transition duration-150 truncate " +
                                 (isActive
-                                  ? "text-indigo-500"
+                                  ? "text-secondary-light"
                                   : "text-slate-400 hover:text-slate-200")
                               }
                             >
@@ -82,7 +82,7 @@ const Annotating = () => {
                               className={({ isActive }) =>
                                 "block transition duration-150 truncate " +
                                 (isActive
-                                  ? "text-indigo-500"
+                                  ? "text-secondary-light"
                                   : "text-slate-400 hover:text-slate-200")
                               }
                             >
@@ -98,7 +98,7 @@ const Annotating = () => {
                               className={({ isActive }) =>
                                 "block transition duration-150 truncate " +
                                 (isActive
-                                  ? "text-indigo-500"
+                                  ? "text-secondary-light"
                                   : "text-slate-400 hover:text-slate-200")
                               }
                             >
@@ -114,7 +114,7 @@ const Annotating = () => {
                               className={({ isActive }) =>
                                 "block transition duration-150 truncate " +
                                 (isActive
-                                  ? "text-indigo-500"
+                                  ? "text-secondary-light"
                                   : "text-slate-400 hover:text-slate-200")
                               }
                             >
@@ -130,7 +130,7 @@ const Annotating = () => {
                               className={({ isActive }) =>
                                 "block transition duration-150 truncate " +
                                 (isActive
-                                  ? "text-indigo-500"
+                                  ? "text-secondary-light"
                                   : "text-slate-400 hover:text-slate-200")
                               }
                             >
@@ -146,7 +146,7 @@ const Annotating = () => {
                               className={({ isActive }) =>
                                 "block transition duration-150 truncate " +
                                 (isActive
-                                  ? "text-indigo-500"
+                                  ? "text-secondary-light"
                                   : "text-slate-400 hover:text-slate-200")
                               }
                             >
@@ -162,7 +162,7 @@ const Annotating = () => {
                               className={({ isActive }) =>
                                 "block transition duration-150 truncate " +
                                 (isActive
-                                  ? "text-indigo-500"
+                                  ? "text-secondary-light"
                                   : "text-slate-400 hover:text-slate-200")
                               }
                             >
@@ -178,7 +178,7 @@ const Annotating = () => {
                               className={({ isActive }) =>
                                 "block transition duration-150 truncate " +
                                 (isActive
-                                  ? "text-indigo-500"
+                                  ? "text-secondary-light"
                                   : "text-slate-400 hover:text-slate-200")
                               }
                             >
@@ -194,7 +194,7 @@ const Annotating = () => {
                               className={({ isActive }) =>
                                 "block transition duration-150 truncate " +
                                 (isActive
-                                  ? "text-indigo-500"
+                                  ? "text-secondary-light"
                                   : "text-slate-400 hover:text-slate-200")
                               }
                             >
@@ -210,7 +210,7 @@ const Annotating = () => {
                               className={({ isActive }) =>
                                 "block transition duration-150 truncate " +
                                 (isActive
-                                  ? "text-indigo-500"
+                                  ? "text-secondary-light"
                                   : "text-slate-400 hover:text-slate-200")
                               }
                             >
@@ -226,7 +226,7 @@ const Annotating = () => {
                               className={({ isActive }) =>
                                 "block transition duration-150 truncate " +
                                 (isActive
-                                  ? "text-indigo-500"
+                                  ? "text-secondary-light"
                                   : "text-slate-400 hover:text-slate-200")
                               }
                             >
