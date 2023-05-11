@@ -22,7 +22,7 @@ const Map = () => {
               {/* Header: Left side */}
               <div className="flex items-center justify-center">
                 {/* Hamburger button */}
-                <div className="bg-gray-400/25 hover:bg-gray-400/50 rounded-lg px-3 py-1">
+                <div>
                 <MapHeader/>
                 </div>
                

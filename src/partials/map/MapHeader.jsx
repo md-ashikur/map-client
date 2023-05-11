@@ -88,7 +88,7 @@ const MapHeader = () => {
 
       {/* Hamburger button */}
       <button
-        className="text-slate-500 hover:text-slate-600"
+        className="bg-gray-400/25  hover:bg-gray-400/50 rounded-lg px-3 flex items-center gap-1 py-2 text-slate-500 hover:text-slate-600"
         aria-controls="sidebar"
         onClick={ToggleSidebar}
       >

@@ -3,6 +3,7 @@ import { NavLink, useLocation } from "react-router-dom";
 
 import SidebarLinkGroup from "./SidebarLinkGroup";
 import "./HelpDrawer.css";
+import Logo from "./Logo";
 
 function Sidebar({ sidebarOpen, setSidebarOpen }) {
   const location = useLocation();
@@ -61,7 +62,7 @@ function Sidebar({ sidebarOpen, setSidebarOpen }) {
   return (
     <div>
       {/* help part Start */}
-      <div className="relative overflow-hidden">
+      <div className=" overflow-hidden">
         <div className={`sidebar ${isOpen == true ? "active" : ""} `}>
           <div className="sd-header">
             <h4 className="mb-0 text-white">Help</h4>
@@ -327,67 +328,47 @@ function Sidebar({ sidebarOpen, setSidebarOpen }) {
           sidebarOpen ? "translate-x-0" : "-translate-x-64"
         }`}
       >
-        {/* Expand / collapse button */}
-        <div className="pt-3 hidden lg:inline-flex 2xl:hidden justify-end mt-auto">
-          <div className="px-3 py-2">
-            <button onClick={() => setSidebarExpanded(!sidebarExpanded)}>
-              <span className="sr-only">Expand / collapse sidebar</span>
-              <svg
-                className="w-6 h-6 fill-current sidebar-expanded:rotate-180"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  className="text-slate-400"
-                  d="M19.586 11l-5-5L16 4.586 23.414 12 16 19.414 14.586 18l5-5H7v-2z"
-                />
-                <path className="text-slate-600" d="M3 23H1V1h2z" />
-              </svg>
-            </button>
-          </div>
-        </div>
-
         {/* Sidebar header */}
-        <div className="flex justify-between  pr-3 sm:px-2">
-          {/* Logo */}
-          <NavLink end to="/" className="block">
-            <svg width="32" height="32" viewBox="0 0 32 32">
-              <defs>
-                <linearGradient
-                  x1="28.538%"
-                  y1="20.229%"
-                  x2="100%"
-                  y2="108.156%"
-                  id="logo-a"
+        <div className="flex justify-between items-center pr-3 sm:px-2">
+            {/*expand sidebar Logo */}
+         <div className="hidden lg:block">
+         {sidebarExpanded ? (
+            <div>
+              <NavLink end to="/" className="hidden lg:block">
+                <Logo/>
+              </NavLink>
+            </div>
+          ) : (
+            <></>
+          )}
+         </div>
+
+        {/* mobile device sidebar logo */}
+         <div>
+              <NavLink end to="/" className="lg:hidden block">
+              <Logo/>
+              </NavLink>
+            </div>
+ 
+
+          {/* Expand / collapse button */}
+          <div className="pt-3 hidden lg:inline-flex 2xl:hidden justify-end mt-auto -ml-1">
+            <div className="px-3 py-2">
+              <button onClick={() => setSidebarExpanded(!sidebarExpanded)}>
+                <span className="sr-only">Expand / collapse sidebar</span>
+                <svg
+                  className="w-6 h-6 fill-current sidebar-expanded:rotate-180"
+                  viewBox="0 0 24 24"
                 >
-                  <stop stopColor="#A5B4FC" stopOpacity="0" offset="0%" />
-                  <stop stopColor="#A5B4FC" offset="100%" />
-                </linearGradient>
-                <linearGradient
-                  x1="88.638%"
-                  y1="29.267%"
-                  x2="22.42%"
-                  y2="100%"
-                  id="logo-b"
-                >
-                  <stop stopColor="#38BDF8" stopOpacity="0" offset="0%" />
-                  <stop stopColor="#38BDF8" offset="100%" />
-                </linearGradient>
-              </defs>
-              <rect fill="#6366F1" width="32" height="32" rx="16" />
-              <path
-                d="M18.277.16C26.035 1.267 32 7.938 32 16c0 8.837-7.163 16-16 16a15.937 15.937 0 01-10.426-3.863L18.277.161z"
-                fill="#4F46E5"
-              />
-              <path
-                d="M7.404 2.503l18.339 26.19A15.93 15.93 0 0116 32C7.163 32 0 24.837 0 16 0 10.327 2.952 5.344 7.404 2.503z"
-                fill="url(#logo-a)"
-              />
-              <path
-                d="M2.223 24.14L29.777 7.86A15.926 15.926 0 0132 16c0 8.837-7.163 16-16 16-5.864 0-10.991-3.154-13.777-7.86z"
-                fill="url(#logo-b)"
-              />
-            </svg>
-          </NavLink>
+                  <path
+                    className="text-slate-400"
+                    d="M19.586 11l-5-5L16 4.586 23.414 12 16 19.414 14.586 18l5-5H7v-2z"
+                  />
+                  <path className="text-slate-600" d="M3 23H1V1h2z" />
+                </svg>
+              </button>
+            </div>
+          </div>
 
           {/* Close button */}
           <button
@@ -409,18 +390,44 @@ function Sidebar({ sidebarOpen, setSidebarOpen }) {
         </div>
 
         {/* trail ============== */}
-        <div className="bg-[#f37a10] lg:hidden block text-white p-2 rounded-lg mt-4 text-xs">
+        {sidebarExpanded ? (
+          <div className="bg-[#f37a10] lg:block hidden text-white p-2 rounded-lg mt-4 text-xs">
+            Trial expires in 4 days.
+            <a href="/" className="underline font-bold">
+              Upgrade now.
+            </a>
+          </div>
+        ) : (
+          <div></div>
+        )}
+        {/* for mobile devices */}
+        <div className="lg:hidden block bg-[#f37a10] text-white p-2 rounded-lg mt-4 text-xs">
           Trial expires in 4 days.
           <a href="/" className="underline font-bold">
             Upgrade now.
           </a>
         </div>
 
+
+    {/*collapse Logo */}
+    {sidebarExpanded ? (
+            <>
+            </>
+          ) : (
+            <div> 
+              <NavLink end to="/" className="hidden ml-2 lg:block">
+              <Logo/>
+              </NavLink></div>
+          )}
         {/* Links */}
         <div className="space-y-8">
           {/* Pages group */}
           <div>
+          
             <ul className="mt-3">
+
+
+              
               {/* Projects */}
 
               <li
@@ -516,8 +523,7 @@ function Sidebar({ sidebarOpen, setSidebarOpen }) {
                       />
                       <polyline
                         className={`stroke-current ${
-                          pathname === "/map" ||
-                          pathname.includes("map")
+                          pathname === "/map" || pathname.includes("map")
                             ? "text-secondary-light"
                             : "text-slate-500"
                         }`}
@@ -525,8 +531,7 @@ function Sidebar({ sidebarOpen, setSidebarOpen }) {
                       />
                       <line
                         className={`stroke-current ${
-                          pathname === "/map" ||
-                          pathname.includes("map")
+                          pathname === "/map" || pathname.includes("map")
                             ? "text-secondary-light"
                             : "text-slate-500"
                         }`}
@@ -537,8 +542,7 @@ function Sidebar({ sidebarOpen, setSidebarOpen }) {
                       />
                       <line
                         className={`stroke-current ${
-                          pathname === "/map" ||
-                          pathname.includes("map")
+                          pathname === "/map" || pathname.includes("map")
                             ? "text-secondary-light"
                             : "text-slate-500"
                         }`}
@@ -766,8 +770,7 @@ function Sidebar({ sidebarOpen, setSidebarOpen }) {
                       <path
                         stroke="none"
                         className={`fill-current ${
-                          pathname === "/pilots" ||
-                          pathname.includes("pilots")
+                          pathname === "/pilots" || pathname.includes("pilots")
                             ? "text-secondary-light"
                             : "text-slate-500"
                         }`}
@@ -1017,25 +1020,31 @@ function Sidebar({ sidebarOpen, setSidebarOpen }) {
                         cy="10"
                         r="7"
                         className={`stroke-current ${
-                          pathname === "/help" ||
-                          pathname.includes("help")
+                          pathname === "/help" || pathname.includes("help")
                             ? "text-secondary-light"
                             : "text-slate-500"
                         }`}
                       />
 
-                      <line  className={`stroke-current ${
-                          pathname === "/help" ||
-                          pathname.includes("help")
+                      <line
+                        className={`stroke-current ${
+                          pathname === "/help" || pathname.includes("help")
                             ? "text-secondary-light"
                             : "text-slate-500"
-                        }`} x1="10" y1="13" x2="10" y2="13.01" />
-                      <path  className={`stroke-current ${
-                          pathname === "/help" ||
-                          pathname.includes("help")
+                        }`}
+                        x1="10"
+                        y1="13"
+                        x2="10"
+                        y2="13.01"
+                      />
+                      <path
+                        className={`stroke-current ${
+                          pathname === "/help" || pathname.includes("help")
                             ? "text-secondary-light"
                             : "text-slate-500"
-                        }`} d="M10 10a1.5 1.5 0 1 0 -1.14 -2.474" />
+                        }`}
+                        d="M10 10a1.5 1.5 0 1 0 -1.14 -2.474"
+                      />
                     </svg>
                     <span className="text-sm font-medium ml-3 lg:opacity-0 lg:sidebar-expanded:opacity-100 2xl:opacity-100 duration-200">
                       Help
