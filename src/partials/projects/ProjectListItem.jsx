@@ -36,7 +36,7 @@ const ProjectListItem = (props) => {
             <div className="text-xs m-2 inline-flex font-medium bg-slate-700 text-slate-100 rounded-full text-center px-2.5 py-1">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                class="icon mr-2 icon-tabler icon-tabler-box-multiple"
+                className="icon mr-2 icon-tabler icon-tabler-box-multiple"
                 width="16"
                 height="16"
                 viewBox="0 0 24 24"
@@ -72,7 +72,7 @@ const ProjectListItem = (props) => {
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    class="-rotate-90 mr-2 icon icon-tabler icon-tabler-plane"
+                    className="-rotate-90 mr-2 icon icon-tabler icon-tabler-plane"
                     width="20"
                     height="20"
                     viewBox="0 0 24 24"
@@ -99,7 +99,7 @@ const ProjectListItem = (props) => {
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    class="icon icon-tabler icon-tabler-folder mr-2"
+                    className="icon icon-tabler icon-tabler-folder mr-2"
                     width="20"
                     height="20"
                     viewBox="0 0 24 24"
@@ -126,7 +126,7 @@ const ProjectListItem = (props) => {
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    class="icon mr-2 icon-tabler icon-tabler-share"
+                    className="icon mr-2 icon-tabler icon-tabler-share"
                     width="20"
                     height="20"
                     viewBox="0 0 24 24"
@@ -172,7 +172,7 @@ const ProjectListItem = (props) => {
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    class="mr-2 icon icon-tabler icon-tabler-users"
+                    className="mr-2 icon icon-tabler icon-tabler-users"
                     width="20"
                     height="20"
                     viewBox="0 0 24 24"
@@ -209,7 +209,7 @@ const ProjectListItem = (props) => {
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    class="mr-2 icon icon-tabler icon-tabler-trash"
+                    className="mr-2 icon icon-tabler icon-tabler-trash"
                     width="20"
                     height="20"
                     viewBox="0 0 24 24"

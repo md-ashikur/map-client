@@ -30,7 +30,7 @@ const Map = () => {
                 <button className="flex items-center bg-gray-400/25 hover:bg-gray-400/50 rounded-lg gap-1 px-3 py-1">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    class="icon icon-tabler icon-tabler-device-floppy"
+                    className="icon icon-tabler icon-tabler-device-floppy"
                     width="30"
                     height="30"
                     viewBox="0 0 24 24"
@@ -52,7 +52,7 @@ const Map = () => {
                 <button className="flex items-center bg-gray-400/25 hover:bg-gray-400/50 rounded-lg gap-1  px-3 py-1 ">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    class="icon icon-tabler icon-tabler-rotate-2"
+                    className="icon icon-tabler icon-tabler-rotate-2"
                     width="30"
                     height="30"
                     viewBox="0 0 24 24"
@@ -76,7 +76,7 @@ const Map = () => {
                 <button className="flex items-center bg-gray-400/25 hover:bg-gray-400/50 rounded-lg gap-1 px-3 py-1 ">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    class="icon icon-tabler icon-tabler-rotate-clockwise"
+                    className="icon icon-tabler icon-tabler-rotate-clockwise"
                     width="30"
                     height="30"
                     viewBox="0 0 24 24"

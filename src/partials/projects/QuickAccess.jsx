@@ -6,7 +6,7 @@ const QuickAccess = () => {
     <React.Fragment>
       {/* Card 1 */}
       <a href="https://www.google.com/">
-      <div className="relative basis-1/2 max-w-[170px] lg:max-w-[200px] h-52 bg-white shadow-lg rounded-lg border border-slate-200 overflow-hidden">
+      <div className="relative basis-1/2 w-[170px] lg:w-[200px] h-52 bg-white shadow-lg rounded-lg border border-slate-200 overflow-hidden">
         {/* Image */}
         <img
           className="absolute w-full h-full object-cover"
@@ -36,10 +36,9 @@ const QuickAccess = () => {
       </div>
       </a>
 
-
       {/* Card 2 */}
      <a href="https://www.google.com/">
-     <div className="relative basis-1/2 max-w-[170px] lg:max-w-[200px]  h-52 bg-white shadow-lg rounded-lg border border-slate-200 overflow-hidden">
+     <div className="relative basis-1/2 w-[170px] lg:w-[200px]  h-52 bg-white shadow-lg rounded-lg border border-slate-200 overflow-hidden">
         {/* Image */}
         <img
           className="absolute w-full h-full object-cover"
@@ -72,7 +71,7 @@ const QuickAccess = () => {
       
       {/* Card 3 */}
      <a href="https://www.google.com/">
-     <div className="relative basis-1/2 max-w-[170px] lg:max-w-[200px]  h-52 bg-white shadow-lg rounded-lg border border-slate-200 overflow-hidden">
+     <div className="relative basis-1/2 w-[170px] lg:w-[200px]  h-52 bg-white shadow-lg rounded-lg border border-slate-200 overflow-hidden">
         {/* Image */}
         <img
           className="absolute w-full h-full object-cover"

@@ -26,7 +26,7 @@ const MapSideBar = ({ sidebarOpen, setSidebarOpen }) => {
             <div className="" onClick={ToggleSidebar}>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                class="icon icon-tabler icon-tabler-square-x"
+                className="icon icon-tabler icon-tabler-square-x"
                 width="45"
                 height="45"
                 viewBox="0 0 24 24"
@@ -45,7 +45,7 @@ const MapSideBar = ({ sidebarOpen, setSidebarOpen }) => {
           <div className="sd-body no-scrollbar">
             <div className="flex justify-center ">
               <iframe
-                width="250"
+                width="230"
                 height="150"
                 src="https://www.youtube.com/embed/tgbNymZ7vqY"
               ></iframe>
@@ -367,7 +367,7 @@ const MapSideBar = ({ sidebarOpen, setSidebarOpen }) => {
                   <div className="flex items-center">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
-                      class="icon shrink-0 w-6 h-6 icon-tabler icon-tabler-map-2"
+                      className="icon shrink-0 w-6 h-6 icon-tabler icon-tabler-map-2"
                       width="32"
                       height="32"
                       viewBox="0 0 24 24"
@@ -426,7 +426,7 @@ const MapSideBar = ({ sidebarOpen, setSidebarOpen }) => {
                   <div className="flex items-center">
                   <svg
                       xmlns="http://www.w3.org/2000/svg"
-                      class="icon shrink-0 w-6 h-6 icon-tabler icon-tabler-brand-telegram"
+                      className="icon shrink-0 w-6 h-6 icon-tabler icon-tabler-brand-telegram"
                       width="32"
                       height="32"
                       viewBox="0 0 24 24"
@@ -474,7 +474,7 @@ const MapSideBar = ({ sidebarOpen, setSidebarOpen }) => {
                   <div className="flex items-center">
                   <svg
                       xmlns="http://www.w3.org/2000/svg"
-                      class="shrink-0 w-6 h-6 icon icon-tabler icon-tabler-drone"
+                      className="shrink-0 w-6 h-6 icon icon-tabler icon-tabler-drone"
                       width="32"
                       height="32"
                       viewBox="0 0 24 24"
@@ -603,7 +603,7 @@ const MapSideBar = ({ sidebarOpen, setSidebarOpen }) => {
                   <div className="flex items-center">
                   <svg
                       xmlns="http://www.w3.org/2000/svg"
-                      class="shrink-0 w-6 h-6 icon icon-tabler icon-tabler-location"
+                      className="shrink-0 w-6 h-6 icon icon-tabler icon-tabler-location"
                       width="32"
                       height="32"
                       viewBox="0 0 24 24"
@@ -652,7 +652,7 @@ const MapSideBar = ({ sidebarOpen, setSidebarOpen }) => {
                   <div className="flex items-center">
                   <svg
                       xmlns="http://www.w3.org/2000/svg"
-                      class="shrink-0 icon icon-tabler icon-tabler-sort-ascending-2"
+                      className="shrink-0 icon icon-tabler icon-tabler-sort-ascending-2"
                       width="32"
                       height="32"
                       viewBox="0 0 24 24"
@@ -735,7 +735,7 @@ const MapSideBar = ({ sidebarOpen, setSidebarOpen }) => {
                   <div className="flex items-center">
                   <svg
                       xmlns="http://www.w3.org/2000/svg"
-                      class="icon shrink-0 w-6 h-6 icon-tabler icon-tabler-building-skyscraper"
+                      className="icon shrink-0 w-6 h-6 icon-tabler icon-tabler-building-skyscraper"
                       width="32"
                       height="32"
                       viewBox="0 0 24 24"
@@ -850,9 +850,9 @@ const MapSideBar = ({ sidebarOpen, setSidebarOpen }) => {
                   }`}
                 >
                   <div className="flex items-center">
-                    <svg
+                  <svg
                       xmlns="http://www.w3.org/2000/svg"
-                      class="shrink-0 icon icon-tabler icon-tabler-zoom-question"
+                      className="shrink-0 icon icon-tabler icon-tabler-zoom-question"
                       width="32"
                       height="32"
                       viewBox="0 0 24 24"
@@ -868,14 +868,25 @@ const MapSideBar = ({ sidebarOpen, setSidebarOpen }) => {
                         cy="10"
                         r="7"
                         className={`stroke-current ${
-                          pathname.includes("help")
-                            ? "text-indigo-300"
-                            : "text-slate-600"
+                          pathname === "/help" ||
+                          pathname.includes("projects")
+                            ? "text-secondary-light"
+                            : "text-slate-500"
                         }`}
                       />
 
-                      <line x1="10" y1="13" x2="10" y2="13.01" />
-                      <path d="M10 10a1.5 1.5 0 1 0 -1.14 -2.474" />
+                      <line  className={`stroke-current ${
+                          pathname === "/help" ||
+                          pathname.includes("projects")
+                            ? "text-secondary-light"
+                            : "text-slate-500"
+                        }`} x1="10" y1="13" x2="10" y2="13.01" />
+                      <path  className={`stroke-current ${
+                          pathname === "/help" ||
+                          pathname.includes("projects")
+                            ? "text-secondary-light"
+                            : "text-slate-500"
+                        }`} d="M10 10a1.5 1.5 0 1 0 -1.14 -2.474" />
                     </svg>
                     <span className="text-sm font-medium ml-3 lg:opacity-100 lg:sidebar-expanded:opacity-100 2xl:opacity-100 duration-200">
                       Help
@@ -903,7 +914,7 @@ const MapSideBar = ({ sidebarOpen, setSidebarOpen }) => {
                   <div className="flex items-center">
                   <svg
                       xmlns="http://www.w3.org/2000/svg"
-                      class="w-6 h-6 shrink-0 icon icon-tabler icon-tabler-settings"
+                      className="w-6 h-6 shrink-0 icon icon-tabler icon-tabler-settings"
                       width="32"
                       height="32"
                       viewBox="0 0 24 24"

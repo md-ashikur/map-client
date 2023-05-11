@@ -1,8 +1,7 @@
 import React, { useState } from "react";
 import QuickAccess from "./QuickAccess";
-import ProjectsList from "./ProjectsList";
 import ModalBasic from "../../components/ModalBasic";
-import { NavLink, Outlet } from "react-router-dom";
+import { Link, NavLink, Outlet } from "react-router-dom";
 import ProjectViewTabs from "./ProjectViewTabs";
 
 const ProjectsBody = () => {
@@ -32,7 +31,8 @@ const ProjectsBody = () => {
           {/* new project button */}
           <div className="mr-2">
             {/* Start */}
-            <button className="btn bg-secondary hover:bg-secondary-dark text-white">
+           <Link to="/map">
+           <button className="btn bg-secondary hover:bg-secondary-dark text-white">
               <svg
                 className="w-4 h-4 fill-current opacity-50 shrink-0"
                 viewBox="0 0 16 16"
@@ -41,6 +41,7 @@ const ProjectsBody = () => {
               </svg>
               <span className="ml-2 hidden lg:block">New Project</span>
             </button>
+           </Link>
             {/* End */}
           </div>
 
@@ -60,7 +61,7 @@ const ProjectsBody = () => {
 
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  class="w-4 h-4 lg:ml-2 icon icon-tabler icon-tabler-folder-plus"
+                  className="w-4 h-4 lg:ml-2 icon icon-tabler icon-tabler-folder-plus"
                   width="28"
                   height="28"
                   viewBox="0 0 24 24"
