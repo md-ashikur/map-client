@@ -509,15 +509,15 @@ function Sidebar({ sidebarOpen, setSidebarOpen }) {
                       <path
                         d="M18 13l-3.5 -5a4 4 0 1 1 7 0l-3.5 5"
                         className={`stroke-current ${
-                          pathname === "/map" || pathname.includes("projects")
+                          pathname === "/map" || pathname.includes("map")
                             ? "text-secondary-light"
                             : "text-slate-500"
                         }`}
                       />
                       <polyline
                         className={`stroke-current ${
-                          pathname === "/equipment" ||
-                          pathname.includes("projects")
+                          pathname === "/map" ||
+                          pathname.includes("map")
                             ? "text-secondary-light"
                             : "text-slate-500"
                         }`}
@@ -525,8 +525,8 @@ function Sidebar({ sidebarOpen, setSidebarOpen }) {
                       />
                       <line
                         className={`stroke-current ${
-                          pathname === "/equipment" ||
-                          pathname.includes("projects")
+                          pathname === "/map" ||
+                          pathname.includes("map")
                             ? "text-secondary-light"
                             : "text-slate-500"
                         }`}
@@ -537,8 +537,8 @@ function Sidebar({ sidebarOpen, setSidebarOpen }) {
                       />
                       <line
                         className={`stroke-current ${
-                          pathname === "/equipment" ||
-                          pathname.includes("projects")
+                          pathname === "/map" ||
+                          pathname.includes("map")
                             ? "text-secondary-light"
                             : "text-slate-500"
                         }`}
@@ -589,7 +589,7 @@ function Sidebar({ sidebarOpen, setSidebarOpen }) {
                       <path
                         className={`stroke-current ${
                           pathname === "/flightLogs" ||
-                          pathname.includes("projects")
+                          pathname.includes("flightLogs")
                             ? "text-secondary-light"
                             : "text-slate-500"
                         }`}
@@ -637,7 +637,7 @@ function Sidebar({ sidebarOpen, setSidebarOpen }) {
                       <path
                         className={`stroke-current ${
                           pathname === "/equipment" ||
-                          pathname.includes("projects")
+                          pathname.includes("equipment")
                             ? "text-secondary-light"
                             : "text-slate-500"
                         }`}
@@ -646,7 +646,7 @@ function Sidebar({ sidebarOpen, setSidebarOpen }) {
                       <line
                         className={`stroke-current ${
                           pathname === "/equipment" ||
-                          pathname.includes("projects")
+                          pathname.includes("equipment")
                             ? "text-secondary-light"
                             : "text-slate-500"
                         }`}
@@ -658,7 +658,7 @@ function Sidebar({ sidebarOpen, setSidebarOpen }) {
                       <path
                         className={`stroke-current ${
                           pathname === "/equipment" ||
-                          pathname.includes("projects")
+                          pathname.includes("equipment")
                             ? "text-secondary-light"
                             : "text-slate-500"
                         }`}
@@ -667,7 +667,7 @@ function Sidebar({ sidebarOpen, setSidebarOpen }) {
                       <path
                         className={`stroke-current ${
                           pathname === "/equipment" ||
-                          pathname.includes("projects")
+                          pathname.includes("equipment")
                             ? "text-secondary-light"
                             : "text-slate-500"
                         }`}
@@ -676,7 +676,7 @@ function Sidebar({ sidebarOpen, setSidebarOpen }) {
                       <path
                         className={`stroke-current ${
                           pathname === "/equipment" ||
-                          pathname.includes("projects")
+                          pathname.includes("equipment")
                             ? "text-secondary-light"
                             : "text-slate-500"
                         }`}
@@ -685,7 +685,7 @@ function Sidebar({ sidebarOpen, setSidebarOpen }) {
                       <line
                         className={`stroke-current ${
                           pathname === "/equipment" ||
-                          pathname.includes("projects")
+                          pathname.includes("equipment")
                             ? "text-secondary-light"
                             : "text-slate-500"
                         }`}
@@ -697,7 +697,7 @@ function Sidebar({ sidebarOpen, setSidebarOpen }) {
                       <path
                         className={`stroke-current ${
                           pathname === "/equipment" ||
-                          pathname.includes("projects")
+                          pathname.includes("equipment")
                             ? "text-secondary-light"
                             : "text-slate-500"
                         }`}
@@ -706,7 +706,7 @@ function Sidebar({ sidebarOpen, setSidebarOpen }) {
                       <line
                         className={`stroke-current ${
                           pathname === "/equipment" ||
-                          pathname.includes("projects")
+                          pathname.includes("equipment")
                             ? "text-secondary-light"
                             : "text-slate-500"
                         }`}
@@ -718,7 +718,7 @@ function Sidebar({ sidebarOpen, setSidebarOpen }) {
                       <path
                         className={`stroke-current ${
                           pathname === "/equipment" ||
-                          pathname.includes("projects")
+                          pathname.includes("equipment")
                             ? "text-secondary-light"
                             : "text-slate-500"
                         }`}
@@ -767,7 +767,7 @@ function Sidebar({ sidebarOpen, setSidebarOpen }) {
                         stroke="none"
                         className={`fill-current ${
                           pathname === "/pilots" ||
-                          pathname.includes("projects")
+                          pathname.includes("pilots")
                             ? "text-secondary-light"
                             : "text-slate-500"
                         }`}
@@ -815,7 +815,7 @@ function Sidebar({ sidebarOpen, setSidebarOpen }) {
                       <path
                         className={`stroke-current ${
                           pathname === "/appsPage" ||
-                          pathname.includes("projects")
+                          pathname.includes("appsPage")
                             ? "text-secondary-light"
                             : "text-slate-500"
                         }`}
@@ -824,7 +824,7 @@ function Sidebar({ sidebarOpen, setSidebarOpen }) {
                       <rect
                         className={`stroke-current ${
                           pathname === "/appsPage" ||
-                          pathname.includes("projects")
+                          pathname.includes("appsPage")
                             ? "text-secondary-light"
                             : "text-slate-500"
                         }`}
@@ -837,7 +837,7 @@ function Sidebar({ sidebarOpen, setSidebarOpen }) {
                       <rect
                         className={`stroke-current ${
                           pathname === "/appsPage" ||
-                          pathname.includes("projects")
+                          pathname.includes("appsPage")
                             ? "text-secondary-light"
                             : "text-slate-500"
                         }`}
@@ -850,7 +850,7 @@ function Sidebar({ sidebarOpen, setSidebarOpen }) {
                       <path
                         className={`stroke-current ${
                           pathname === "/appsPage" ||
-                          pathname.includes("projects")
+                          pathname.includes("appsPage")
                             ? "text-secondary-light"
                             : "text-slate-500"
                         }`}
@@ -898,7 +898,7 @@ function Sidebar({ sidebarOpen, setSidebarOpen }) {
                       <line
                         className={`stroke-current ${
                           pathname === "/organization" ||
-                          pathname.includes("projects")
+                          pathname.includes("organization")
                             ? "text-secondary-light"
                             : "text-slate-500"
                         }`}
@@ -910,7 +910,7 @@ function Sidebar({ sidebarOpen, setSidebarOpen }) {
                       <path
                         className={`stroke-current ${
                           pathname === "/organization" ||
-                          pathname.includes("projects")
+                          pathname.includes("organization")
                             ? "text-secondary-light"
                             : "text-slate-500"
                         }`}
@@ -919,7 +919,7 @@ function Sidebar({ sidebarOpen, setSidebarOpen }) {
                       <path
                         className={`stroke-current ${
                           pathname === "/organization" ||
-                          pathname.includes("projects")
+                          pathname.includes("organization")
                             ? "text-secondary-light"
                             : "text-slate-500"
                         }`}
@@ -928,7 +928,7 @@ function Sidebar({ sidebarOpen, setSidebarOpen }) {
                       <line
                         className={`stroke-current ${
                           pathname === "/organization" ||
-                          pathname.includes("projects")
+                          pathname.includes("organization")
                             ? "text-secondary-light"
                             : "text-slate-500"
                         }`}
@@ -940,7 +940,7 @@ function Sidebar({ sidebarOpen, setSidebarOpen }) {
                       <line
                         className={`stroke-current ${
                           pathname === "/organization" ||
-                          pathname.includes("projects")
+                          pathname.includes("organization")
                             ? "text-secondary-light"
                             : "text-slate-500"
                         }`}
@@ -952,7 +952,7 @@ function Sidebar({ sidebarOpen, setSidebarOpen }) {
                       <line
                         className={`stroke-current ${
                           pathname === "/organization" ||
-                          pathname.includes("projects")
+                          pathname.includes("organization")
                             ? "text-secondary-light"
                             : "text-slate-500"
                         }`}
@@ -964,7 +964,7 @@ function Sidebar({ sidebarOpen, setSidebarOpen }) {
                       <line
                         className={`stroke-current ${
                           pathname === "/organization" ||
-                          pathname.includes("projects")
+                          pathname.includes("organization")
                             ? "text-secondary-light"
                             : "text-slate-500"
                         }`}
@@ -1018,7 +1018,7 @@ function Sidebar({ sidebarOpen, setSidebarOpen }) {
                         r="7"
                         className={`stroke-current ${
                           pathname === "/help" ||
-                          pathname.includes("projects")
+                          pathname.includes("help")
                             ? "text-secondary-light"
                             : "text-slate-500"
                         }`}
@@ -1026,13 +1026,13 @@ function Sidebar({ sidebarOpen, setSidebarOpen }) {
 
                       <line  className={`stroke-current ${
                           pathname === "/help" ||
-                          pathname.includes("projects")
+                          pathname.includes("help")
                             ? "text-secondary-light"
                             : "text-slate-500"
                         }`} x1="10" y1="13" x2="10" y2="13.01" />
                       <path  className={`stroke-current ${
                           pathname === "/help" ||
-                          pathname.includes("projects")
+                          pathname.includes("help")
                             ? "text-secondary-light"
                             : "text-slate-500"
                         }`} d="M10 10a1.5 1.5 0 1 0 -1.14 -2.474" />
@@ -1077,7 +1077,7 @@ function Sidebar({ sidebarOpen, setSidebarOpen }) {
                       <path
                         className={`stroke-current ${
                           pathname === "/preferences" ||
-                          pathname.includes("projects")
+                          pathname.includes("preferences")
                             ? "text-secondary-light"
                             : "text-slate-500"
                         }`}
@@ -1086,7 +1086,7 @@ function Sidebar({ sidebarOpen, setSidebarOpen }) {
                       <circle
                         className={`stroke-current ${
                           pathname === "/preferences" ||
-                          pathname.includes("projects")
+                          pathname.includes("preferences")
                             ? "text-secondary-light"
                             : "text-slate-500"
                         }`}
