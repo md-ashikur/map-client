@@ -4,7 +4,7 @@ import ProjectListItem from "./ProjectListItem";
 import map1 from "../../images/map1.jpg";
 
 import PaginationNumeric from "../../components/PaginationNumeric";
-import DropdownSort from "../../components/DropdownSort";
+
 
 const ProjectsList = () => {
   const items = [

@@ -3,19 +3,21 @@ import QuickAccess from "./QuickAccess";
 import ModalBasic from "../../components/ModalBasic";
 import { Link, NavLink, Outlet } from "react-router-dom";
 import ProjectViewTabs from "./ProjectViewTabs";
+import QuickAccesCard from "./QuickAccesCard";
 
 const ProjectsBody = () => {
   const [feedbackModalOpen, setFeedbackModalOpen] = useState(false);
 
   return (
     <div className="flex flex-col flex-1 my-5 lg:mx-28 mx-5">
+      
       {/* quick access */}
       <div className="mt-8">
         <h2 className="text-xl leading-snug text-slate-800 font-bold mb-5">
           Quick Access
         </h2>
-        <div className="flex flex-wrap lg:gap-5 gap-2 flex-row">
-          <QuickAccess />
+        <div className="">
+        <QuickAccesCard/>
         </div>
       </div>
 
