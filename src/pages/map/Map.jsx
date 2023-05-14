@@ -16,17 +16,17 @@ const Map = () => {
       {/* Content area */}
       <div className="relative flex flex-col flex-1 overflow-y-auto overflow-x-hidden">
         {/* Map header */}
-        <header className="fixed top-0  z-30 py-2 w-full lg:w-[81%]">
-          <div className="px-4 sm:px-6 lg:px-8">
-            <div className="flex items-center justify-between h-10 -mb-px">
+        <header className="fixed top-0 z-30 pt-2 pl-0">
+          <div className=" sm:px-6 lg:pr-0 ">
+
               {/* Header: Left side */}
-              <div className="flex items-center justify-center">
+              <div className="flex items-center justify-center gap-2">
                 {/* Hamburger button */}
                 <div>
                 <MapHeader/>
                 </div>
                
-                <div className="flex items-center justify-center ml-5 space-x-3">
+                
                 <button className="flex items-center bg-gray-400/25 hover:bg-gray-400/50 rounded-lg gap-1 px-3 py-1">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -91,12 +91,9 @@ const Map = () => {
                   </svg>
               
                 </button>
-              </div>
+              
               </div>
 
-              {/* Header: Right side */}
-              
-            </div>
           </div>
         </header>
 

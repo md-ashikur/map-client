@@ -26,7 +26,13 @@ module.exports = {
           light: '#65bf06',
           DEFAULT: '#4b8400',
           dark: '#406e04',
+          
         },
+       'tint' : {
+        DEFAULT: '#648b80',
+        dark: '#4c6e65',
+        light: '#79ab9d',
+       }
       },
       outline: {
         blue: '2px solid rgba(0, 112, 244, 0.5)',
