@@ -16,11 +16,11 @@ const QuickAccesCard = () => {
   return (
     <div className="">
       <Swiper
-       
+      
         breakpoints={{
           360: {
             slidesPerView: 2,
-           
+           spaceBetween:5,
           },
           768: {
             slidesPerView: 5,
@@ -38,7 +38,7 @@ const QuickAccesCard = () => {
 
           return (
             //    ==============Slide cards =================
-            <SwiperSlide className="flex mx-2 flex-col items-center" key={id}>
+            <SwiperSlide className="flex flex-col items-center" key={id}>
               <a href="https://www.google.com/">
                 <div className="relative basis-1/2 w-[170px] lg:w-[200px] h-52 bg-white shadow-lg rounded-lg border border-slate-200 overflow-hidden">
                   {/* Image */}

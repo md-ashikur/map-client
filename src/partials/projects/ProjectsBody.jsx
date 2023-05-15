@@ -9,7 +9,7 @@ const ProjectsBody = () => {
   const [feedbackModalOpen, setFeedbackModalOpen] = useState(false);
 
   return (
-    <div className="flex flex-col flex-1 my-5 lg:mx-28 mx-5">
+    <div className="flex flex-col flex-1 my-5 lg:mx-28 mx-3">
       
       {/* quick access */}
       <div className="mt-8">
