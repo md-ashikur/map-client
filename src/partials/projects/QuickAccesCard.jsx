@@ -23,12 +23,12 @@ const QuickAccesCard = () => {
            spaceBetween:5,
           },
           768: {
-            slidesPerView: 5,
-           
+            slidesPerView: 4,
+            spaceBetween:5,
           },
           1024: {
             slidesPerView: 5,
-            
+            spaceBetween:2,
           },
         }}
         className="mySwiper"
@@ -40,7 +40,7 @@ const QuickAccesCard = () => {
             //    ==============Slide cards =================
             <SwiperSlide className="flex flex-col items-center" key={id}>
               <a href="https://www.google.com/">
-                <div className="relative basis-1/2 w-[170px] lg:w-[200px] h-52 bg-white shadow-lg rounded-lg border border-slate-200 overflow-hidden">
+                <div className="relative w-[170px] lg:w-[200px] h-52 bg-white shadow-lg rounded-lg border border-slate-200 overflow-hidden">
                   {/* Image */}
                   <img
                     className="absolute w-full h-full object-cover"
