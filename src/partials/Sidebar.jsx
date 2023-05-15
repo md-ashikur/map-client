@@ -472,7 +472,11 @@ function Sidebar({ sidebarOpen, setSidebarOpen }) {
                         }`}
                         d="M17.657 16.657l-4.243 4.243a2 2 0 0 1 -2.827 0l-4.244 -4.243a8 8 0 1 1 11.314 0z"
                       />
-                      <circle cx="12" cy="11" r="3" />
+                      <circle  className={`stroke-current ${
+                          pathname === "/" || pathname.includes("projects")
+                            ? "text-primary"
+                            : "text-primary"
+                        }`} cx="12" cy="11" r="3" />
                     </svg>
 
                     <span className="text-sm font-medium ml-3 lg:opacity-0 lg:sidebar-expanded:opacity-100 2xl:opacity-100 duration-200">
@@ -512,7 +516,11 @@ function Sidebar({ sidebarOpen, setSidebarOpen }) {
                       stroke-linejoin="round"
                     >
                       <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                      <line x1="18" y1="6" x2="18" y2="6.01" />
+                      <line  className={`stroke-current ${
+                          pathname === "/map" || pathname.includes("map")
+                            ? "text-secondary-light"
+                            : "text-tint"
+                        }`} x1="18" y1="6" x2="18" y2="6.01" />
                       <path
                         d="M18 13l-3.5 -5a4 4 0 1 1 7 0l-3.5 5"
                         className={`stroke-current ${

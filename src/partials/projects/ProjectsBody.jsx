@@ -23,11 +23,12 @@ const ProjectsBody = () => {
 
       {/* all projects */}
       <div className="mt-8 ">
-        <h2 className="text-xl leading-snug text-slate-800 font-bold mb-5">
+       <div className="flex lg:flex-col justify-between">
+       <h2 className="text-xl leading-snug text-slate-800 font-bold mb-5">
           All Projects
         </h2>
 
-        <hr className="my-4" />
+        <hr className="my-4 hidden lg:block" />
         
         <div className="mb-5 flex">
           {/* new project button */}
@@ -36,12 +37,12 @@ const ProjectsBody = () => {
            <Link to="/map">
            <button className="btn bg-secondary hover:bg-secondary-dark text-white">
               <svg
-                className="w-4 h-4 fill-current opacity-50 shrink-0"
+                className="w-4 h-4 fill-current opacity-50 "
                 viewBox="0 0 16 16"
               >
                 <path d="M15 7H9V1c0-.6-.4-1-1-1S7 .4 7 1v6H1c-.6 0-1 .4-1 1s.4 1 1 1h6v6c0 .6.4 1 1 1s1-.4 1-1V9h6c.6 0 1-.4 1-1s-.4-1-1-1z" />
               </svg>
-              <span className="ml-2 hidden lg:block">New Project</span>
+              <span className="ml-2 lg:block">New Project</span>
             </button>
            </Link>
             {/* End */}
@@ -63,9 +64,8 @@ const ProjectsBody = () => {
 
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  className="w-4 h-4 lg:ml-2 icon icon-tabler icon-tabler-folder-plus"
-                  width="28"
-                  height="28"
+                  className="w-4 h-5 lg:ml-2 icon icon-tabler icon-tabler-folder-plus"
+                 
                   viewBox="0 0 24 24"
                   stroke-width="2"
                   stroke="#ffffff"
@@ -126,6 +126,7 @@ const ProjectsBody = () => {
             {/* End */}
           </div>
         </div>
+       </div>
         <ProjectViewTabs/>
         
       </div>

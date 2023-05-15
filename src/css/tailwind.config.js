@@ -29,9 +29,9 @@ module.exports = {
           
         },
        'tint' : {
-        DEFAULT: '#648b80',
-        dark: '#4c6e65',
-        light: '#79ab9d',
+        DEFAULT: '#2b4a4675',
+        dark: '#4c6e658c',
+        light: '#5b877cab',
        }
       },
       outline: {
