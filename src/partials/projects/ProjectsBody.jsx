@@ -22,14 +22,11 @@ const ProjectsBody = () => {
 
       {/* all projects */}
       <div className="mt-8 ">
-       <div className="flex lg:flex-col justify-between">
+       <div className="flex items-center">
        <h2 className="text-xl leading-snug text-slate-800 font-bold mb-5">
           All Projects
         </h2>
-
-        <hr className="my-4 hidden lg:block" />
-        
-        <div className="mb-5 flex">
+        <div className="mb-5 flex ml-5">
           {/* new project button */}
           <div className="mr-2">
             {/* Start */}
@@ -125,6 +122,9 @@ const ProjectsBody = () => {
             {/* End */}
           </div>
         </div>
+        <hr className="my-4 hidden lg:block" />
+        
+      
        </div>
         <ProjectViewTabs/>
         
