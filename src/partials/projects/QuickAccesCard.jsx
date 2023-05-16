@@ -10,27 +10,29 @@ import { Navigation, Autoplay } from "swiper";
 const QuickAccesCard = () => {
   const [slides, setSlides] = useState(CardItem);
 
-  const navigationPrevRef = React.useRef(null);
-  const navigationNextRef = React.useRef(null);
 
   return (
-    <div className="">
+    <div className=" relative ">
       <Swiper
-      
-        breakpoints={{
-          360: {
-            slidesPerView: 2,
-           spaceBetween:5,
-          },
-          768: {
-            slidesPerView: 4,
-            spaceBetween:5,
-          },
-          1024: {
-            slidesPerView: 5,
-            spaceBetween:2,
-          },
-        }}
+        slidesPerView={1}
+      breakpoints={{
+        390: {
+          slidesPerView: 2,
+          spaceBetween: 5,
+        },
+        640: {
+          slidesPerView: 2,
+          spaceBetween: 20,
+        },
+        768: {
+          slidesPerView: 4,
+          spaceBetween: 20,
+        },
+        1024: {
+          slidesPerView: 5,
+          spaceBetween: 20,
+        },
+      }}
         className="mySwiper"
       >
         {slides.map((elem) => {
@@ -38,15 +40,13 @@ const QuickAccesCard = () => {
 
           return (
             //    ==============Slide cards =================
-            <SwiperSlide className="flex flex-col items-center" key={id}>
+            <SwiperSlide className="!w-[170px] lg:!w-[200px] mx-2 lg:mx-0" key={id}>
               <a href="https://www.google.com/">
-                <div className="relative w-[170px] lg:w-[200px] h-52 bg-white shadow-lg rounded-lg border border-slate-200 overflow-hidden">
+                <div className="relative  h-52 bg-white shadow-lg rounded-lg border border-slate-200 overflow-hidden">
                   {/* Image */}
                   <img
                     className="absolute w-full h-full object-cover"
-                    src={image}
-                    width="386"
-                    height="260"
+                    src={image}                  
                     alt="Application 17"
                   />
                   {/* Gradient */}
