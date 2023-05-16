@@ -52,7 +52,7 @@ function DropdownEditMenu({
       <Transition
         show={dropdownOpen}
         tag="div"
-        className={`origin-bottom-left z-10 absolute -bottom-12 -left-36 min-w-36 bg-white border border-slate-200 py-1.5 rounded shadow-lg overflow-hidden mt-1 ${align === 'right' ? 'right-0' : 'left-0'}`}
+        className={`origin-bottom-left z-10 absolute -bottom-12 -left-36 min-w-36 bg-white border border-slate-200 py-1.5 rounded shadow-lg overflow-hidden mt-1 ${align === 'right' ? 'right-0' : '-left-34'}`}
         enter="transition ease-out duration-200 transform"
         enterStart="opacity-0 -translate-y-2"
         enterEnd="opacity-100 translate-y-0"
