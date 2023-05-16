@@ -29,7 +29,7 @@ module.exports = {
           
         },
        'tint' : {
-        DEFAULT: '#2b4a4675',
+        DEFAULT: '#648b808a',
         dark: '#4c6e658c',
         light: '#5b877cab',
        }

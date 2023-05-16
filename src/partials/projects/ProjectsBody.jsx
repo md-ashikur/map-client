@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import QuickAccess from "./QuickAccess";
 import ModalBasic from "../../components/ModalBasic";
 import { Link, NavLink, Outlet } from "react-router-dom";
 import ProjectViewTabs from "./ProjectViewTabs";

@@ -5,7 +5,7 @@ import DropdownEditMenu from "../../components/DropdownEditMenu";
 const ProjectListItem = (props) => {
   return (
     <div
-      className={`shadow-lg rounded-sm border w-full m-2  px-5 py-4 ${
+      className={`shadow-lg rounded-sm border w-auto m-2  px-5 py-4 ${
         props.type === "Featured"
           ? "bg-amber-50 border-amber-300"
           : "bg-white border-slate-200"
