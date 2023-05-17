@@ -71,7 +71,7 @@ const ProjectViewTabs = () => {
 
       <Swiper pagination={pagination} modules={[Pagination]} className="">
         <div>
-          <SwiperSlide>          
+          <SwiperSlide >          
             <ProjectsList />
           </SwiperSlide>
           <SwiperSlide>

@@ -12,7 +12,7 @@ const ProjectsList = () => {
       id: 0,
       image: map1,
       company: "Company 01",
-      role: "Agriculture Example",
+      role: "Agriculture Example     ",
       link: "/job/job-post",
       details: "Contract / Remote / New York, NYC",
       date: "April 22, 2023",
